@@ -1,82 +1,73 @@
-<br>
 <h1 align="center">
-  👋 Hello! I'm AgnesMillie
+  👋 Hello! I'm AgnesMillie
 </h1>
 
 <h3 align="center">
-  Full Stack Software Architect
+  Full Stack Software Architect
 </h3>
 
 <p align="center">
-  <i>Building the future of technology with robust and innovative code.</i>
+  <i>Building the future of technology with robust and innovative code.</i>
 </p>
 
 <br>
 
 <div align="center">
-  <p>A software engineering professional passionate about transforming complex concepts into functional solutions.</p>
-  <p>My experience spans the entire development lifecycle—from conception and architecture to implementation and optimization—ensuring scalable, high-performance applications.</p>
+  <p>A software engineering professional passionate about transforming complex concepts into functional solutions.</p>
+  <p>My experience spans the entire development lifecycle—from conception and architecture to implementation and optimization—ensuring scalable, high-performance applications.</p>
 </div>
 
 ---
 
 <div align="center">
-  <h3>✨ My Development Ecosystem ✨</h3>
-  <br>
-  
-  <h4>Programming Languages</h4>
-  <table align="center" style="border-collapse: collapse;">
-    <tr>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="45" height="45" alt="JavaScript" /><br>JavaScript</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="45" height="45" alt="TypeScript" /><br>TypeScript</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="45" height="45" alt="Python" /><br>Python</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="45" height="45" alt="Java" /><br>Java</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="45" height="45" alt="HTML5" /><br>HTML5</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="45" height="45" alt="CSS3" /><br>CSS3</td>
-    </tr>
-  </table>
+  <h3>✨ My Development Ecosystem ✨</h3>
+  <br>
+  
+  <h4>Programming Languages</h4>
+  <p>
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  </p>
 
-  <br>
+  <br>
 
-  <h4>Frontend</h4>
-  <table align="center">
-    <tr>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg" width="45" height="45" alt="Angular" /><br>Angular</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="45" height="45" alt="React" /><br>React</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" width="45" height="45" alt="Vue.js" /><br>Vue.js</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="45" height="45" alt="Node.js" /><br>Node.js</td>
-    </tr>
-  </table>
-  
-  <h4>Databases</h4>
-  <table align="center">
-    <tr>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="45" height="45" alt="MySQL" /><br>MySQL</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="45" height="45" alt="PostgreSQL" /><br>PostgreSQL</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="45" height="45" alt="MongoDB" /><br>MongoDB</td>
-    </tr>
-  </table>
+  <h4>Frontend</h4>
+  <p>
+    <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
+    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js" />
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  </p>
+  
+  <h4>Databases</h4>
+  <p>
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  </p>
 
-  <h4>Cloud & DevOps</h4>
-  <table align="center">
-    <tr>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="45" height="45" alt="Docker" /><br>Docker</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" width="45" height="45" alt="Kubernetes" /><br>Kubernetes</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="45" height="45" alt="AWS" /><br>AWS</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" width="45" height="45" alt="Terraform" /><br>Terraform</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="45" height="45" alt="GitHub Actions" /><br>GH Actions</td>
-      <td align="center" width="90"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="45" height="45" alt="Linux" /><br>Linux</td>
-    </tr>
-  </table>
+  <h4>Cloud & DevOps</h4>
+  <p>
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+    <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+    <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+    <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" />
+    <img src="https://img.shields.io/badge/GitHub_Actions-222222?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  </p>
 </div>
 
 ---
 
 <div align="center">
-  <h3>🚀 My Contributions & Statistics 🚀</h3>
- 
-  <p align="center">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=AgnesMillie&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&card_width=320" alt="AgnesMillie's GitHub Stats" />
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AgnesMillie&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&card_width=320" alt="AgnesMillie's Top Languages" />
-  </p>
+  <h3>🚀 My Contributions & Statistics 🚀</h3>
+ 
+  <p align="center">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=AgnesMillie&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&card_width=320" alt="AgnesMillie's GitHub Stats" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AgnesMillie&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&card_width=320" alt="AgnesMillie's Top Languages" />
+  </p>
 </div>
