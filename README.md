@@ -9,9 +9,9 @@
     <strong>Building the future with robust architecture and secure code.</strong>
   </p>
   <p>
-    I act at the intersection of <strong>High-Performance Computing</strong> and <strong>Cybersecurity</strong>. 
-    My approach transforms complex requirements into scalable, fault-tolerant distributed systems. 
-    Focused on <em>Security by Design</em>, I ensure that every layer of the application—from the database to the interface—is optimized for efficiency and protection.
+    I act at the intersection of <strong>High Performance Computing</strong> and <strong>Cybersecurity</strong>. 
+    My approach transforms complex requirements into scalable, fault tolerant distributed systems. 
+    Focused on <em>Security by Design</em>, I ensure that every layer of the application from the database to the interface is optimized for efficiency and protection.
   </p>
 </div>
 
