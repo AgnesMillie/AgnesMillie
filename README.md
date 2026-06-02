@@ -1,21 +1,21 @@
 <!-- ╔══════════════════════════════════════════════════════════════════════╗ -->
-<!-- ║          BIBLIOTECA DIGITAL DE TECNOLOGIA — AGNES MILLIE           ║ -->
+<!-- ║              AGNES MILLIE — ARQUITETA DE SISTEMAS                  ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════╝ -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,35:071428,65:0E2144,100:0D1117&height=230&section=header&text=Agnes%20Millie&fontSize=62&fontColor=D4AF37&fontAlignY=40&fontAlign=50&desc=Biblioteca%20Digital%20%E2%80%A2%20Arquiteta%20de%20Sistemas%20%E2%80%A2%20Enterprise%20Solutions&descColor=7A9CC4&descSize=17&descAlignY=62&animation=fadeIn" width="100%" alt="Agnes Millie — Biblioteca Digital de Tecnologia" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,35:071428,65:0E2144,100:0D1117&height=230&section=header&text=Agnes%20Millie&fontSize=62&fontColor=D4AF37&fontAlignY=40&fontAlign=50&desc=Arquiteta%20de%20Sistemas%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20Enterprise%20Solutions&descColor=7A9CC4&descSize=17&descAlignY=62&animation=fadeIn" width="100%" alt="Agnes Millie — Arquiteta de Sistemas" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=600&size=20&duration=3800&pause=1400&color=D4AF37&center=true&vCenter=true&width=780&lines=%22Transformando+conhecimento+em+solu%C3%A7%C3%B5es+tecnol%C3%B3gicas+de+alto+impacto%22;Full+Stack+Developer+%7C+Systems+Architect+%7C+AI+Specialist;Gest%C3%A3o+Documental+%E2%80%A2+Automa%C3%A7%C3%A3o+Empresarial+%E2%80%A2+Integra%C3%A7%C3%A3o+de+APIs;Cada+projeto%2C+uma+obra.+Cada+solu%C3%A7%C3%A3o%2C+um+legado." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=600&size=20&duration=3800&pause=1400&color=D4AF37&center=true&vCenter=true&width=780&lines=%22Transformando+conhecimento+em+solucoes+tecnologicas+de+alto+impacto%22;Full+Stack+Developer+%7C+Systems+Architect+%7C+AI+Specialist;Gestao+Documental+%E2%80%A2+Automacao+Empresarial+%E2%80%A2+Integracao+de+APIs;Cada+projeto%2C+uma+obra.+Cada+solucao%2C+um+legado." alt="Typing SVG" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=AgnesMillie&color=D4AF37&style=for-the-badge&label=VISITANTES+DO+ACERVO" alt="Visitantes"/>
+  <img src="https://komarev.com/ghpvc/?username=AgnesMillie&color=D4AF37&style=for-the-badge&label=VISUALIZACOES+DO+PERFIL" alt="Visualizacoes"/>
   &nbsp;&nbsp;
-  <img src="https://img.shields.io/github/followers/AgnesMillie?style=for-the-badge&color=7A9CC4&labelColor=0D1117&label=LEITORES" alt="Followers"/>
+  <img src="https://img.shields.io/github/followers/AgnesMillie?style=for-the-badge&color=7A9CC4&labelColor=0D1117&label=SEGUIDORES" alt="Followers"/>
   &nbsp;&nbsp;
   <img src="https://img.shields.io/github/stars/AgnesMillie?style=for-the-badge&color=D4AF37&labelColor=0D1117&label=ESTRELAS" alt="Stars"/>
 </div>
@@ -29,12 +29,12 @@
 <br/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                    §  ENTRADA DA BIBLIOTECA                          -->
+<!--                    §  PERFIL PROFISSIONAL                            -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <h2>Bem-vindo à Biblioteca</h2>
-  <p><i>Um acervo de soluções tecnológicas cuidadosamente catalogadas</i></p>
+  <h2>Agnes Millie</h2>
+  <p><i>Arquiteta de Sistemas e Full Stack Developer especializada em soluções corporativas</i></p>
 </div>
 
 <br/>
@@ -43,7 +43,7 @@
   <tr>
     <td width="58%" valign="top">
       <br/>
-      <h3>Sobre o Acervo</h3>
+      <h3>Sobre Agnes Millie</h3>
       <p>
         Sou <strong>Agnes Millie</strong>, Arquiteta de Sistemas e Desenvolvedora Full Stack especializada em construir soluções corporativas robustas, escaláveis e inteligentes.
       </p>
@@ -58,9 +58,9 @@
       </blockquote>
       <br/>
       <p>
-        <img src="https://img.shields.io/badge/Localização-Brasil-009C3B?style=flat-square&labelColor=0D1117"/>
+        <img src="https://img.shields.io/badge/Localizacao-Brasil-009C3B?style=flat-square&labelColor=0D1117"/>
         &nbsp;
-        <img src="https://img.shields.io/badge/Status-Disponível_para_Projetos-D4AF37?style=flat-square&labelColor=0D1117"/>
+        <img src="https://img.shields.io/badge/Status-Disponivel_para_Projetos-D4AF37?style=flat-square&labelColor=0D1117"/>
         &nbsp;
         <img src="https://img.shields.io/badge/Idiomas-PT_%E2%80%A2_EN_%E2%80%A2_ES-7A9CC4?style=flat-square&labelColor=0D1117"/>
       </p>
@@ -68,9 +68,9 @@
     </td>
     <td width="42%" valign="center" align="center">
       <br/>
-      <img src="https://github-readme-stats.vercel.app/api?username=AgnesMillie&show_icons=true&theme=github_dark&hide_border=true&count_private=true&title_color=D4AF37&icon_color=D4AF37&text_color=7A9CC4&bg_color=0D1117&custom_title=Estatísticas+do+Acervo" alt="GitHub Stats" />
+      <img src="https://github-readme-stats.vercel.app/api?username=AgnesMillie&show_icons=true&theme=github_dark&hide_border=true&count_private=true&title_color=D4AF37&icon_color=D4AF37&text_color=7A9CC4&bg_color=0D1117" alt="GitHub Stats" />
       <br/><br/>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AgnesMillie&layout=compact&langs_count=6&theme=github_dark&hide_border=true&title_color=D4AF37&text_color=7A9CC4&bg_color=0D1117&custom_title=Linguagens+do+Acervo" alt="Top Languages" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AgnesMillie&layout=compact&langs_count=6&theme=github_dark&hide_border=true&title_color=D4AF37&text_color=7A9CC4&bg_color=0D1117" alt="Top Languages" />
       <br/>
     </td>
   </tr>
@@ -88,7 +88,7 @@
 
 <div align="center">
   <h2>Catalogo de Especialidades</h2>
-  <p><i>Areas de conhecimento e atuacao catalogadas neste acervo</i></p>
+  <p><i>Areas de conhecimento e atuacao</i></p>
 </div>
 
 <br/>
@@ -187,12 +187,12 @@
 <br/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                    §  ACERVO TECNOLOGICO                            -->
+<!--                    §  STACK TECNOLOGICO                             -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <h2>Acervo Tecnologico</h2>
-  <p><i>Tecnologias e ferramentas que compoem este acervo de conhecimento</i></p>
+  <h2>Stack Tecnologico</h2>
+  <p><i>Tecnologias e ferramentas que compõem este perfil</i></p>
 </div>
 
 <br/>
@@ -240,11 +240,11 @@
 <br/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                    §  METRICAS DO ACERVO                            -->
+<!--                    §  METRICAS & CONTRIBUICOES                      -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <h2>Metricas do Acervo</h2>
+  <h2>Metricas & Contribuicoes</h2>
   <p><i>Indicadores de atividade, contribuicao e consistencia tecnica</i></p>
 </div>
 
@@ -257,7 +257,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AgnesMillie&theme=github-compact&bg_color=0D1117&color=D4AF37&line=1E4D8C&point=D4AF37&area=true&area_color=0E2144&hide_border=true&custom_title=Historico+de+Contribuicoes+ao+Acervo" width="96%" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AgnesMillie&theme=github-compact&bg_color=0D1117&color=D4AF37&line=1E4D8C&point=D4AF37&area=true&area_color=0E2144&hide_border=true&custom_title=Historico+de+Contribuicoes" width="96%" alt="Activity Graph" />
 </div>
 
 <br/>
@@ -278,7 +278,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AgnesMillie&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=AgnesMillie&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=4" alt="GitHub Trophies" />
 </div>
 
 <br/>
@@ -288,7 +288,7 @@
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,35:071428,65:0E2144,100:0D1117&height=140&section=footer&text=Agnes%20Millie%20%E2%80%A2%20Biblioteca%20Digital%20de%20Tecnologia&fontSize=16&fontColor=D4AF37&fontAlignY=58&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,35:071428,65:0E2144,100:0D1117&height=140&section=footer&text=Agnes%20Millie%20%E2%80%A2%20Arquiteta%20de%20Sistemas%20%E2%80%A2%20Enterprise%20Solutions&fontSize=16&fontColor=D4AF37&fontAlignY=58&animation=fadeIn" width="100%"/>
 </div>
 
 <div align="center">
