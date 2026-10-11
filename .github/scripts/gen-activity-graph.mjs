@@ -12,6 +12,7 @@
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
+import { parseArgs } from './lib/args.mjs';
 import { contributionCalendar } from './lib/github.mjs';
 import { C, esc, num, open, rule, suit } from './lib/theme.mjs';
 
@@ -207,16 +208,10 @@ function periodLabel(firstDate, lastDate) {
 }
 
 async function main() {
-  const argv = process.argv.slice(2);
-  const fixtureAt = argv.indexOf('--fixture');
-  const fixture = fixtureAt === -1 ? null : argv[fixtureAt + 1];
-  const args = argv.filter((a, i) => a !== '--placeholder' && a !== '--fixture' && i !== fixtureAt + 1);
-  const login = args[0];
-  const out = args[1] || 'profile/activity-graph.svg';
-  if (!login) throw new Error('uso: gen-activity-graph.mjs <login> [saída] [--placeholder] [--fixture <json>]');
+  const { login, out, placeholder: usePlaceholder, fixture } = parseArgs(process.argv.slice(2), 'profile/activity-graph.svg');
 
   let svg;
-  if (argv.includes('--placeholder')) {
+  if (usePlaceholder) {
     svg = placeholder();
   } else {
     const { days, source } = fixture
