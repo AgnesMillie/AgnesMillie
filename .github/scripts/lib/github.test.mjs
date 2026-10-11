@@ -1,4 +1,4 @@
-// node --test .github/scripts/lib
+// node --test ".github/scripts/**/*.test.mjs"
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseContributionsHtml } from './github.mjs';

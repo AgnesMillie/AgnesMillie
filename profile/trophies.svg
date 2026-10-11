@@ -60,7 +60,7 @@
 <g opacity=".55">
   <clipPath id="clip-0"><rect x="30" y="104" width="275" height="158" rx="10"/></clipPath>
   <rect x="30" y="104" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="35" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="35" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-0)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="-245" y="104" width="192.5" height="158" fill="url(#sheen)">
@@ -81,7 +81,7 @@
 <g opacity=".55">
   <clipPath id="clip-1"><rect x="319" y="104" width="275" height="158" rx="10"/></clipPath>
   <rect x="319" y="104" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="324" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="324" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-1)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="44" y="104" width="192.5" height="158" fill="url(#sheen)">
@@ -102,7 +102,7 @@
 <g opacity=".55">
   <clipPath id="clip-2"><rect x="608" y="104" width="275" height="158" rx="10"/></clipPath>
   <rect x="608" y="104" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="613" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="613" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-2)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="333" y="104" width="192.5" height="158" fill="url(#sheen)">
@@ -123,7 +123,7 @@
 <g opacity=".55">
   <clipPath id="clip-3"><rect x="897" y="104" width="275" height="158" rx="10"/></clipPath>
   <rect x="897" y="104" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="902" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="902" y="109" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-3)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="622" y="104" width="192.5" height="158" fill="url(#sheen)">
@@ -144,7 +144,7 @@
 <g opacity=".55">
   <clipPath id="clip-4"><rect x="30" y="276" width="275" height="158" rx="10"/></clipPath>
   <rect x="30" y="276" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="35" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="35" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-4)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="-245" y="276" width="192.5" height="158" fill="url(#sheen)">
@@ -165,7 +165,7 @@
 <g opacity=".55">
   <clipPath id="clip-5"><rect x="319" y="276" width="275" height="158" rx="10"/></clipPath>
   <rect x="319" y="276" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="324" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="324" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-5)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="44" y="276" width="192.5" height="158" fill="url(#sheen)">
@@ -186,7 +186,7 @@
 <g opacity=".55">
   <clipPath id="clip-6"><rect x="608" y="276" width="275" height="158" rx="10"/></clipPath>
   <rect x="608" y="276" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="613" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="613" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-6)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="333" y="276" width="192.5" height="158" fill="url(#sheen)">
@@ -207,7 +207,7 @@
 <g opacity=".55">
   <clipPath id="clip-7"><rect x="897" y="276" width="275" height="158" rx="10"/></clipPath>
   <rect x="897" y="276" width="275" height="158" rx="10" fill="#221B33" stroke="#8C6A12" stroke-width="1.2"/>
-  <rect class="" x="902" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
+  <rect x="902" y="281" width="265" height="148" rx="7" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-opacity=".35"/>
   <g clip-path="url(#clip-7)">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="622" y="276" width="192.5" height="158" fill="url(#sheen)">

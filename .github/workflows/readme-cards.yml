@@ -97,7 +97,7 @@ jobs:
       - name: Test card generators
         id: tests
         continue-on-error: true
-        run: node --test .github/scripts/lib
+        run: node --test ".github/scripts/**/*.test.mjs"
 
       # Cartões desenhados no próprio repositório: não dependem de serviço
       # externo em tempo de leitura do README, só da API do GitHub aqui.

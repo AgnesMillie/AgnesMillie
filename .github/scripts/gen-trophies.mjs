@@ -48,7 +48,7 @@ function card(trophy, index) {
 <g${missing ? ' opacity=".55"' : ''}>
   <clipPath id="${clip}"><rect x="${x}" y="${y}" width="${CARD_W}" height="${CARD_H}" rx="10"/></clipPath>
   <rect x="${x}" y="${y}" width="${CARD_W}" height="${CARD_H}" rx="10" fill="${C.panel}" stroke="${C.goldDark}" stroke-width="1.2"/>
-  <rect class="${ace ? 'ace' : ''}" x="${x + 5}" y="${y + 5}" width="${CARD_W - 10}" height="${CARD_H - 10}" rx="7" fill="none" stroke="${C.gold}" stroke-width=".6" stroke-opacity=".35"${ace ? ` style="animation-delay:${delay}s"` : ''}/>
+  <rect x="${x + 5}" y="${y + 5}" width="${CARD_W - 10}" height="${CARD_H - 10}" rx="7" fill="none" stroke="${C.gold}" stroke-width=".6" stroke-opacity=".35"${ace ? ` class="ace" style="animation-delay:${delay}s"` : ''}/>
   <g clip-path="url(#${clip})">
     <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
     <rect class="motion" x="${x - CARD_W}" y="${y}" width="${CARD_W * 0.7}" height="${CARD_H}" fill="url(#sheen)">
