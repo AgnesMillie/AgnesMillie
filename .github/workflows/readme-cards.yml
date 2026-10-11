@@ -90,6 +90,33 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Test card generators
+        id: tests
+        continue-on-error: true
+        run: node --test ".github/scripts/**/*.test.mjs"
+
+      # Cartões desenhados no próprio repositório: não dependem de serviço
+      # externo em tempo de leitura do README, só da API do GitHub aqui.
+      - name: Generate activity graph
+        id: activity
+        if: steps.tests.outcome == 'success'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.CARDS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/gen-activity-graph.mjs "${{ github.repository_owner }}" profile/activity-graph.svg
+
+      - name: Generate trophies card
+        id: trophies
+        if: steps.tests.outcome == 'success'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.CARDS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/gen-trophies.mjs "${{ github.repository_owner }}" profile/trophies.svg
+
       - name: Commit cards
         run: |
           if [ ! -d profile ]; then
@@ -113,7 +140,10 @@ jobs:
           steps.pin_eventflow.outcome == 'failure' ||
           steps.pin_apex.outcome == 'failure' ||
           steps.pin_snapshot.outcome == 'failure' ||
-          steps.pin_audyn.outcome == 'failure'
+          steps.pin_audyn.outcome == 'failure' ||
+          steps.tests.outcome == 'failure' ||
+          steps.activity.outcome == 'failure' ||
+          steps.trophies.outcome == 'failure'
         run: |
           echo "::error::One or more cards failed to generate; the previous SVGs were kept."
           exit 1

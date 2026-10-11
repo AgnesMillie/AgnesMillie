@@ -306,7 +306,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AgnesMillie&theme=github-compact&bg_color=1A1726&color=F1E6CC&line=C0344D&point=D4AF37&area=true&area_color=2A2140&hide_border=true&custom_title=Hist%C3%B3rico+de+Contribui%C3%A7%C3%B5es" width="96%" alt="Gráfico de atividade de contribuições" />
+  <img src="./profile/activity-graph.svg" width="96%" alt="Gráfico de atividade de contribuições dos últimos doze meses" />
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
@@ -324,7 +324,7 @@
 </p>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AgnesMillie&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=4" alt="Troféus do GitHub" />
+  <img src="./profile/trophies.svg" width="96%" alt="Conquistas do GitHub apresentadas como cartas de baralho" />
 </div>
 
 <br/>
