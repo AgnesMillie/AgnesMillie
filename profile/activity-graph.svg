@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 404" width="1200" height="404" role="img" aria-labelledby="t d">
+<title id="t">Histórico de contribuições de Agnes Millie</title>
+<desc id="d">Gráfico de linha com as contribuições por semana nos últimos doze meses (últimos 12 meses). Total de — contribuições, melhor dia com — e média de — por semana.</desc>
+<defs>
+<linearGradient id="goldv" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#F6DC8A"/><stop offset=".5" stop-color="#D4AF37"/><stop offset="1" stop-color="#8C6A12"/>
+</linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#D4AF37" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#D4AF37" stop-opacity=".9"/>
+  <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#F6DC8A" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#F6DC8A" stop-opacity=".30"/>
+  <stop offset="1" stop-color="#F6DC8A" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="vignette" cx="50%" cy="38%" r="78%">
+  <stop offset="0" stop-color="#2A2140"/><stop offset=".62" stop-color="#1A1726"/><stop offset="1" stop-color="#13101F"/>
+</radialGradient>
+<radialGradient id="spark">
+  <stop offset="0" stop-color="#F6DC8A" stop-opacity=".95"/>
+  <stop offset=".45" stop-color="#D4AF37" stop-opacity=".45"/>
+  <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+</radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<path id="dj-spade" d="M920 1492Q1014 1325 1230 1049Q1467 771 1473 714Q1512 629 1512 549V509Q1512 342 1350 246Q1297 224 1233 224Q1079 224 984 445H942V433Q942 150 1025 0H810V6Q895 157 895 442L892 445H854L807 357Q722 224 595 224Q408 224 332 433L323 506V552Q323 735 510 938Q825 1324 914 1489L917 1492Z"/>
+<path id="dj-heart" d="M552 1492Q755 1492 871 1257Q913 1164 915 1115H918Q953 1277 1045 1384Q1153 1492 1288 1492Q1497 1492 1623 1268Q1655 1185 1655 1112Q1655 862 1447 635L918 0H912L350 689Q182 894 182 1112Q182 1323 381 1447Q465 1492 552 1492Z"/>
+<path id="dj-club" d="M919 1492Q1133 1492 1234 1265Q1247 1213 1250 1157Q1250 1040 1130 880L1070 820H1073Q1147 848 1231 848H1250Q1488 848 1584 646Q1607 580 1607 520Q1607 315 1398 211Q1358 199 1287 193Q1045 193 944 467H941V458Q941 115 1023 6V0H815L809 6Q894 134 894 467V470H891Q791 193 546 193Q355 193 253 394Q228 462 228 520Q228 753 474 836Q540 848 591 848H600Q686 848 764 820H767V823Q683 894 654 963Q594 1073 594 1154V1168Q594 1369 809 1473Q880 1492 919 1492Z"/>
+<path id="dj-diamond" d="M918 1492 1421 839Q1490 754 1490 741L918 0Q906 8 344 741Q344 755 455 893Z"/></defs>
+<style>
+  text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+  .pip { animation: pip 4.2s ease-in-out infinite; }
+  @keyframes pip { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
+  /* Quem pediu menos movimento perde só os laços decorativos, nunca o conteúdo. */
+  @media (prefers-reduced-motion: reduce) {
+    .pip { animation: none; }
+    .motion { display: none; }
+  }
+  .curve { fill: none; stroke: #C0344D; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; filter: url(#glow); }
+  .trace { fill: none; stroke: #F6DC8A; stroke-width: 3.2; stroke-linecap: round; filter: url(#glow);
+    stroke-dasharray: .06 .94; animation: trace 7s linear infinite; }
+  @keyframes trace { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+  .grid { stroke: #2A2140; stroke-width: 1; stroke-dasharray: 3 6; }
+  .axis { font-size: 11px; fill: #A99CC4; letter-spacing: 1.2px; }
+  .peak { animation: beat 2.6s ease-in-out infinite; }
+  @keyframes beat { 0%, 100% { r: 4.2; opacity: .95; } 50% { r: 6.6; opacity: .5; } }
+  .halo { animation: halo 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes halo { 0% { transform: scale(.4); opacity: .85; } 75%, 100% { transform: scale(2.4); opacity: 0; } }</style>
+
+<rect width="1200" height="404" rx="14" fill="url(#vignette)"/>
+<rect x="3.5" y="3.5" width="1193" height="397" rx="12" fill="none" stroke="#8C6A12" stroke-width="1.6"/>
+<rect x="9.5" y="9.5" width="1181" height="385" rx="8" fill="none" stroke="#D4AF37" stroke-width=".7" stroke-opacity=".45"/>
+<use xlink:href="#dj-spade" fill="#D4AF37" transform="translate(24 30) scale(0.008713 -0.008713)" opacity=".75" class="pip" style="animation-delay:0.00s"/>
+<use xlink:href="#dj-heart" fill="#B3263E" transform="translate(1176 30) scale(0.008713 -0.008713)" opacity=".75" class="pip" style="animation-delay:0.45s"/>
+<use xlink:href="#dj-club" fill="#D4AF37" transform="translate(24 388) scale(0.008713 -0.008713)" opacity=".75" class="pip" style="animation-delay:0.90s"/>
+<use xlink:href="#dj-diamond" fill="#B3263E" transform="translate(1176 388) scale(0.008713 -0.008713)" opacity=".75" class="pip" style="animation-delay:1.35s"/>
+<defs>
+  <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#7B5EA7" stop-opacity=".7"/>
+    <stop offset=".5" stop-color="#7B5EA7" stop-opacity=".28"/>
+    <stop offset="1" stop-color="#7B5EA7" stop-opacity=".04"/>
+  </linearGradient>
+  <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F6DC8A" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#F6DC8A" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#F6DC8A" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="under"><path d="M84.0 290.0 C87.4 290.0 97.6 290.0 104.5 290.0 C111.3 290.0 118.1 290.0 124.9 290.0 C131.8 290.0 138.6 290.0 145.4 290.0 C152.2 290.0 159.1 290.0 165.9 290.0 C172.7 290.0 179.5 290.0 186.4 290.0 C193.2 290.0 200.0 290.0 206.8 290.0 C213.6 290.0 220.5 290.0 227.3 290.0 C234.1 290.0 240.9 290.0 247.8 290.0 C254.6 290.0 261.4 290.0 268.2 290.0 C275.1 290.0 281.9 290.0 288.7 290.0 C295.5 290.0 302.4 290.0 309.2 290.0 C316.0 290.0 322.8 290.0 329.6 290.0 C336.5 290.0 343.3 290.0 350.1 290.0 C356.9 290.0 363.8 290.0 370.6 290.0 C377.4 290.0 384.2 290.0 391.1 290.0 C397.9 290.0 404.7 290.0 411.5 290.0 C418.4 290.0 425.2 290.0 432.0 290.0 C438.8 290.0 445.6 290.0 452.5 290.0 C459.3 290.0 466.1 290.0 472.9 290.0 C479.8 290.0 486.6 290.0 493.4 290.0 C500.2 290.0 507.1 290.0 513.9 290.0 C520.7 290.0 527.5 290.0 534.4 290.0 C541.2 290.0 548.0 290.0 554.8 290.0 C561.6 290.0 568.5 290.0 575.3 290.0 C582.1 290.0 588.9 290.0 595.8 290.0 C602.6 290.0 609.4 290.0 616.2 290.0 C623.1 290.0 629.9 290.0 636.7 290.0 C643.5 290.0 650.4 290.0 657.2 290.0 C664.0 290.0 670.8 290.0 677.6 290.0 C684.5 290.0 691.3 290.0 698.1 290.0 C704.9 290.0 711.8 290.0 718.6 290.0 C725.4 290.0 732.2 290.0 739.1 290.0 C745.9 290.0 752.7 290.0 759.5 290.0 C766.4 290.0 773.2 290.0 780.0 290.0 C786.8 290.0 793.6 290.0 800.5 290.0 C807.3 290.0 814.1 290.0 820.9 290.0 C827.8 290.0 834.6 290.0 841.4 290.0 C848.2 290.0 855.1 290.0 861.9 290.0 C868.7 290.0 875.5 290.0 882.4 290.0 C889.2 290.0 896.0 290.0 902.8 290.0 C909.6 290.0 916.5 290.0 923.3 290.0 C930.1 290.0 936.9 290.0 943.8 290.0 C950.6 290.0 957.4 290.0 964.2 290.0 C971.1 290.0 977.9 290.0 984.7 290.0 C991.5 290.0 998.4 290.0 1005.2 290.0 C1012.0 290.0 1018.8 290.0 1025.6 290.0 C1032.5 290.0 1039.3 290.0 1046.1 290.0 C1052.9 290.0 1059.8 290.0 1066.6 290.0 C1073.4 290.0 1080.2 290.0 1087.1 290.0 C1093.9 290.0 1100.7 290.0 1107.5 290.0 C1114.4 290.0 1124.6 290.0 1128.0 290.0 L1128.0 290 L84.0 290 Z"/></clipPath>
+</defs>
+
+<text x="600" y="52" text-anchor="middle" font-size="25" fill="url(#goldv)" letter-spacing="2.2">Histórico de Contribuições</text>
+<rect x="420" y="62" width="360" height="1.2" fill="url(#rule)"/>
+<text x="600" y="82" text-anchor="middle" font-size="12" fill="#A99CC4" letter-spacing="2.4">ÚLTIMOS 12 MESES</text>
+<use xlink:href="#dj-heart" fill="#B3263E" transform="translate(404 60) scale(0.007373 -0.007373)" class="pip"/>
+<use xlink:href="#dj-spade" fill="#D4AF37" transform="translate(796 60) scale(0.007373 -0.007373)" class="pip" style="animation-delay:.8s"/>
+
+<line class="grid" x1="84" y1="290.0" x2="1128" y2="290.0"/>
+<text class="axis" x="72" y="294.0" text-anchor="end">0</text>
+<line class="grid" x1="84" y1="243.5" x2="1128" y2="243.5"/>
+<text class="axis" x="72" y="247.5" text-anchor="end">1</text>
+<line class="grid" x1="84" y1="197.0" x2="1128" y2="197.0"/>
+<text class="axis" x="72" y="201.0" text-anchor="end">2</text>
+<line class="grid" x1="84" y1="150.5" x2="1128" y2="150.5"/>
+<text class="axis" x="72" y="154.5" text-anchor="end">3</text>
+<line class="grid" x1="84" y1="104.0" x2="1128" y2="104.0"/>
+<text class="axis" x="72" y="108.0" text-anchor="end">4</text>
+<text class="axis" x="84.0" y="310" text-anchor="middle">out</text>
+<text class="axis" x="227.3" y="310" text-anchor="middle">dez</text>
+<text class="axis" x="309.2" y="310" text-anchor="middle">jan</text>
+<text class="axis" x="391.1" y="310" text-anchor="middle">fev</text>
+<text class="axis" x="472.9" y="310" text-anchor="middle">mar</text>
+<text class="axis" x="575.3" y="310" text-anchor="middle">abr</text>
+<text class="axis" x="657.2" y="310" text-anchor="middle">mai</text>
+<text class="axis" x="759.5" y="310" text-anchor="middle">jun</text>
+<text class="axis" x="841.4" y="310" text-anchor="middle">jul</text>
+<text class="axis" x="923.3" y="310" text-anchor="middle">ago</text>
+<text class="axis" x="1025.6" y="310" text-anchor="middle">set</text>
+<text class="axis" x="1107.5" y="310" text-anchor="middle">out</text>
+
+<path d="M84.0 290.0 C87.4 290.0 97.6 290.0 104.5 290.0 C111.3 290.0 118.1 290.0 124.9 290.0 C131.8 290.0 138.6 290.0 145.4 290.0 C152.2 290.0 159.1 290.0 165.9 290.0 C172.7 290.0 179.5 290.0 186.4 290.0 C193.2 290.0 200.0 290.0 206.8 290.0 C213.6 290.0 220.5 290.0 227.3 290.0 C234.1 290.0 240.9 290.0 247.8 290.0 C254.6 290.0 261.4 290.0 268.2 290.0 C275.1 290.0 281.9 290.0 288.7 290.0 C295.5 290.0 302.4 290.0 309.2 290.0 C316.0 290.0 322.8 290.0 329.6 290.0 C336.5 290.0 343.3 290.0 350.1 290.0 C356.9 290.0 363.8 290.0 370.6 290.0 C377.4 290.0 384.2 290.0 391.1 290.0 C397.9 290.0 404.7 290.0 411.5 290.0 C418.4 290.0 425.2 290.0 432.0 290.0 C438.8 290.0 445.6 290.0 452.5 290.0 C459.3 290.0 466.1 290.0 472.9 290.0 C479.8 290.0 486.6 290.0 493.4 290.0 C500.2 290.0 507.1 290.0 513.9 290.0 C520.7 290.0 527.5 290.0 534.4 290.0 C541.2 290.0 548.0 290.0 554.8 290.0 C561.6 290.0 568.5 290.0 575.3 290.0 C582.1 290.0 588.9 290.0 595.8 290.0 C602.6 290.0 609.4 290.0 616.2 290.0 C623.1 290.0 629.9 290.0 636.7 290.0 C643.5 290.0 650.4 290.0 657.2 290.0 C664.0 290.0 670.8 290.0 677.6 290.0 C684.5 290.0 691.3 290.0 698.1 290.0 C704.9 290.0 711.8 290.0 718.6 290.0 C725.4 290.0 732.2 290.0 739.1 290.0 C745.9 290.0 752.7 290.0 759.5 290.0 C766.4 290.0 773.2 290.0 780.0 290.0 C786.8 290.0 793.6 290.0 800.5 290.0 C807.3 290.0 814.1 290.0 820.9 290.0 C827.8 290.0 834.6 290.0 841.4 290.0 C848.2 290.0 855.1 290.0 861.9 290.0 C868.7 290.0 875.5 290.0 882.4 290.0 C889.2 290.0 896.0 290.0 902.8 290.0 C909.6 290.0 916.5 290.0 923.3 290.0 C930.1 290.0 936.9 290.0 943.8 290.0 C950.6 290.0 957.4 290.0 964.2 290.0 C971.1 290.0 977.9 290.0 984.7 290.0 C991.5 290.0 998.4 290.0 1005.2 290.0 C1012.0 290.0 1018.8 290.0 1025.6 290.0 C1032.5 290.0 1039.3 290.0 1046.1 290.0 C1052.9 290.0 1059.8 290.0 1066.6 290.0 C1073.4 290.0 1080.2 290.0 1087.1 290.0 C1093.9 290.0 1100.7 290.0 1107.5 290.0 C1114.4 290.0 1124.6 290.0 1128.0 290.0 L1128.0 290 L84.0 290 Z" fill="url(#area)"/>
+<g clip-path="url(#under)">
+  <!-- luz que atravessa o preenchimento, só enfeite: o gráfico já está desenhado -->
+  <rect class="motion" x="-216" y="90" width="300" height="200" fill="url(#shimmer)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;1644 0;1644 0"
+      keyTimes="0;0.45;1" dur="9s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+</g>
+<path id="curve" class="curve" pathLength="1" d="M84.0 290.0 C87.4 290.0 97.6 290.0 104.5 290.0 C111.3 290.0 118.1 290.0 124.9 290.0 C131.8 290.0 138.6 290.0 145.4 290.0 C152.2 290.0 159.1 290.0 165.9 290.0 C172.7 290.0 179.5 290.0 186.4 290.0 C193.2 290.0 200.0 290.0 206.8 290.0 C213.6 290.0 220.5 290.0 227.3 290.0 C234.1 290.0 240.9 290.0 247.8 290.0 C254.6 290.0 261.4 290.0 268.2 290.0 C275.1 290.0 281.9 290.0 288.7 290.0 C295.5 290.0 302.4 290.0 309.2 290.0 C316.0 290.0 322.8 290.0 329.6 290.0 C336.5 290.0 343.3 290.0 350.1 290.0 C356.9 290.0 363.8 290.0 370.6 290.0 C377.4 290.0 384.2 290.0 391.1 290.0 C397.9 290.0 404.7 290.0 411.5 290.0 C418.4 290.0 425.2 290.0 432.0 290.0 C438.8 290.0 445.6 290.0 452.5 290.0 C459.3 290.0 466.1 290.0 472.9 290.0 C479.8 290.0 486.6 290.0 493.4 290.0 C500.2 290.0 507.1 290.0 513.9 290.0 C520.7 290.0 527.5 290.0 534.4 290.0 C541.2 290.0 548.0 290.0 554.8 290.0 C561.6 290.0 568.5 290.0 575.3 290.0 C582.1 290.0 588.9 290.0 595.8 290.0 C602.6 290.0 609.4 290.0 616.2 290.0 C623.1 290.0 629.9 290.0 636.7 290.0 C643.5 290.0 650.4 290.0 657.2 290.0 C664.0 290.0 670.8 290.0 677.6 290.0 C684.5 290.0 691.3 290.0 698.1 290.0 C704.9 290.0 711.8 290.0 718.6 290.0 C725.4 290.0 732.2 290.0 739.1 290.0 C745.9 290.0 752.7 290.0 759.5 290.0 C766.4 290.0 773.2 290.0 780.0 290.0 C786.8 290.0 793.6 290.0 800.5 290.0 C807.3 290.0 814.1 290.0 820.9 290.0 C827.8 290.0 834.6 290.0 841.4 290.0 C848.2 290.0 855.1 290.0 861.9 290.0 C868.7 290.0 875.5 290.0 882.4 290.0 C889.2 290.0 896.0 290.0 902.8 290.0 C909.6 290.0 916.5 290.0 923.3 290.0 C930.1 290.0 936.9 290.0 943.8 290.0 C950.6 290.0 957.4 290.0 964.2 290.0 C971.1 290.0 977.9 290.0 984.7 290.0 C991.5 290.0 998.4 290.0 1005.2 290.0 C1012.0 290.0 1018.8 290.0 1025.6 290.0 C1032.5 290.0 1039.3 290.0 1046.1 290.0 C1052.9 290.0 1059.8 290.0 1066.6 290.0 C1073.4 290.0 1080.2 290.0 1087.1 290.0 C1093.9 290.0 1100.7 290.0 1107.5 290.0 C1114.4 290.0 1124.6 290.0 1128.0 290.0"/>
+<path class="trace motion" pathLength="1" d="M84.0 290.0 C87.4 290.0 97.6 290.0 104.5 290.0 C111.3 290.0 118.1 290.0 124.9 290.0 C131.8 290.0 138.6 290.0 145.4 290.0 C152.2 290.0 159.1 290.0 165.9 290.0 C172.7 290.0 179.5 290.0 186.4 290.0 C193.2 290.0 200.0 290.0 206.8 290.0 C213.6 290.0 220.5 290.0 227.3 290.0 C234.1 290.0 240.9 290.0 247.8 290.0 C254.6 290.0 261.4 290.0 268.2 290.0 C275.1 290.0 281.9 290.0 288.7 290.0 C295.5 290.0 302.4 290.0 309.2 290.0 C316.0 290.0 322.8 290.0 329.6 290.0 C336.5 290.0 343.3 290.0 350.1 290.0 C356.9 290.0 363.8 290.0 370.6 290.0 C377.4 290.0 384.2 290.0 391.1 290.0 C397.9 290.0 404.7 290.0 411.5 290.0 C418.4 290.0 425.2 290.0 432.0 290.0 C438.8 290.0 445.6 290.0 452.5 290.0 C459.3 290.0 466.1 290.0 472.9 290.0 C479.8 290.0 486.6 290.0 493.4 290.0 C500.2 290.0 507.1 290.0 513.9 290.0 C520.7 290.0 527.5 290.0 534.4 290.0 C541.2 290.0 548.0 290.0 554.8 290.0 C561.6 290.0 568.5 290.0 575.3 290.0 C582.1 290.0 588.9 290.0 595.8 290.0 C602.6 290.0 609.4 290.0 616.2 290.0 C623.1 290.0 629.9 290.0 636.7 290.0 C643.5 290.0 650.4 290.0 657.2 290.0 C664.0 290.0 670.8 290.0 677.6 290.0 C684.5 290.0 691.3 290.0 698.1 290.0 C704.9 290.0 711.8 290.0 718.6 290.0 C725.4 290.0 732.2 290.0 739.1 290.0 C745.9 290.0 752.7 290.0 759.5 290.0 C766.4 290.0 773.2 290.0 780.0 290.0 C786.8 290.0 793.6 290.0 800.5 290.0 C807.3 290.0 814.1 290.0 820.9 290.0 C827.8 290.0 834.6 290.0 841.4 290.0 C848.2 290.0 855.1 290.0 861.9 290.0 C868.7 290.0 875.5 290.0 882.4 290.0 C889.2 290.0 896.0 290.0 902.8 290.0 C909.6 290.0 916.5 290.0 923.3 290.0 C930.1 290.0 936.9 290.0 943.8 290.0 C950.6 290.0 957.4 290.0 964.2 290.0 C971.1 290.0 977.9 290.0 984.7 290.0 C991.5 290.0 998.4 290.0 1005.2 290.0 C1012.0 290.0 1018.8 290.0 1025.6 290.0 C1032.5 290.0 1039.3 290.0 1046.1 290.0 C1052.9 290.0 1059.8 290.0 1066.6 290.0 C1073.4 290.0 1080.2 290.0 1087.1 290.0 C1093.9 290.0 1100.7 290.0 1107.5 290.0 C1114.4 290.0 1124.6 290.0 1128.0 290.0"/>
+<circle class="motion" r="11" fill="url(#spark)">
+  <animateMotion dur="7s" begin="0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#curve"/></animateMotion>
+</circle>
+
+<g>
+  <circle cx="84.0" cy="290.0" r="4.2" fill="none" stroke="#F6DC8A" stroke-width="1.4" class="halo motion"/>
+  <circle cx="84.0" cy="290.0" r="4.2" fill="#F6DC8A" class="peak"/>
+  <circle cx="1128.0" cy="290.0" r="3.4" fill="#C0344D" stroke="#F6DC8A" stroke-width="1.2"/>
+</g>
+
+<rect x="110" y="324" width="980" height="1.2" fill="url(#rule)"/>
+
+<g>
+  <use xlink:href="#dj-spade" fill="#D4AF37" transform="translate(300 332) scale(0.007373 -0.007373)" class="pip"/>
+  <text x="300" y="360" text-anchor="middle" font-size="24" fill="#F6DC8A" letter-spacing=".5">—</text>
+  <text x="300" y="379" text-anchor="middle" font-size="11" fill="#A99CC4" letter-spacing="1.6">TOTAL NO ANO</text>
+</g>
+
+<g>
+  <use xlink:href="#dj-heart" fill="#B3263E" transform="translate(600 332) scale(0.007373 -0.007373)" class="pip"/>
+  <text x="600" y="360" text-anchor="middle" font-size="24" fill="#F6DC8A" letter-spacing=".5">—</text>
+  <text x="600" y="379" text-anchor="middle" font-size="11" fill="#A99CC4" letter-spacing="1.6">MELHOR DIA</text>
+</g>
+
+<g>
+  <use xlink:href="#dj-diamond" fill="#B3263E" transform="translate(900 332) scale(0.007373 -0.007373)" class="pip"/>
+  <text x="900" y="360" text-anchor="middle" font-size="24" fill="#F6DC8A" letter-spacing=".5">—</text>
+  <text x="900" y="379" text-anchor="middle" font-size="11" fill="#A99CC4" letter-spacing="1.6">MÉDIA SEMANAL</text>
+</g>
+<text x="600" y="164" text-anchor="middle" font-size="15" fill="#A99CC4">Aguardando a primeira coleta de dados do GitHub.</text>
+</svg>
