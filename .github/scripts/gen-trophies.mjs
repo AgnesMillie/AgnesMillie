@@ -12,7 +12,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { parseArgs } from './lib/args.mjs';
 import { allPublicRepos, rest, searchCount } from './lib/github.mjs';
-import { C, esc, frame, open, rule, SANS, shortNum, textWidth } from './lib/theme.mjs';
+import { C, esc, fit, frame, MIN_READABLE, open, rule, SANS, shortNum } from './lib/theme.mjs';
 import { rugPattern, vinyl, vinylDefs, waveform } from './lib/motifs.mjs';
 
 const W = 1200;
@@ -20,18 +20,12 @@ const COLS = 4;
 const MARGIN = 34;
 const GAP = 16;
 const CARD_W = Math.round((W - MARGIN * 2 - GAP * (COLS - 1)) / COLS);
-const CARD_H = 184;
+const CARD_H = 200;
 const GRID_TOP = 112;
 
 /** Selos de disco, do mais alto para o mais baixo. */
 const SEALS = ['Ouro', 'Prata', 'Bronze', 'Cobre', 'Demo'];
 const SEAL_COLOR = { Ouro: C.brass, Prata: '#BFC3C0', Bronze: C.clay, Cobre: C.terracotta, Demo: C.muted };
-
-/** Maior tamanho de fonte, até `max`, em que o texto ainda cabe em `width`. */
-function fit(text, max, width) {
-  const estimated = textWidth(text, max);
-  return estimated <= width ? max : Math.max(10, Math.floor((max * width) / estimated * 10) / 10);
-}
 
 function sealOf(value, thresholds) {
   if (value === null || value === undefined) return null;
@@ -55,7 +49,7 @@ function card(item, index) {
   const inner = CARD_W - 40;
   const labelSize = fit(item.label, 21, inner);
   const flavorSize = fit(item.flavor, 17, inner);
-  const valueSize = fit(item.display, 44, CARD_W - 96);
+  const valueSize = fit(item.display, 44, inner, 24);
 
   return `
 <g${missing ? ' opacity=".5"' : ''}>
@@ -72,12 +66,12 @@ function card(item, index) {
     ${waveform(x + 14, y + CARD_H - 20, CARD_W - 28, 20, 26, item.seed, C.terracotta, '.22')}
   </g>
 
-  ${vinyl(x + 42, y + 48, 24, { spin: missing ? 0 : 13 + index, label: sealColor, grooves: 4, id: `t${index}` })}
-  <text x="${x + CARD_W - 16}" y="${y + 32}" text-anchor="end" font-size="12.5" fill="${sealColor}" letter-spacing="2.4" font-family="${SANS}">${esc(seal.toUpperCase())}</text>
+  ${vinyl(x + 34, y + 34, 16, { spin: missing ? 0 : 13 + index, label: sealColor, grooves: 3, id: `t${index}` })}
+  <text x="${x + CARD_W - 18}" y="${y + 39}" text-anchor="end" font-size="${MIN_READABLE}" fill="${sealColor}" letter-spacing="1.8" font-family="${SANS}">${esc(seal.toUpperCase())}</text>
 
-  <text x="${x + 78}" y="${y + 62}" font-size="${valueSize}" fill="url(#brassv)" letter-spacing=".5">${esc(item.display)}</text>
-  <text x="${x + 20}" y="${y + 114}" font-size="${labelSize}" fill="${C.cream}" letter-spacing=".3">${esc(item.label)}</text>
-  <text x="${x + 20}" y="${y + 141}" font-size="${flavorSize}" fill="${C.muted}" font-style="italic">${esc(item.flavor)}</text>
+  <text x="${x + 20}" y="${y + 100}" font-size="${valueSize}" fill="url(#brassv)" letter-spacing=".5">${esc(item.display)}</text>
+  <text x="${x + 20}" y="${y + 134}" font-size="${labelSize}" fill="${C.cream}" letter-spacing=".3">${esc(item.label)}</text>
+  <text x="${x + 20}" y="${y + 160}" font-size="${flavorSize}" fill="${C.muted}" font-style="italic">${esc(item.flavor)}</text>
 </g>`;
 }
 
@@ -100,11 +94,11 @@ ${frame(W, H)}
 
 <text x="${W / 2}" y="58" text-anchor="middle" font-size="30" fill="url(#brassv)" letter-spacing="3">Faixas bônus</text>
 ${rule(W / 2, 68, 300)}
-<text x="${W / 2}" y="92" text-anchor="middle" font-size="13" fill="${C.muted}" letter-spacing="3" font-family="${SANS}">O QUE FICOU GRAVADO ATÉ AQUI</text>
+<text x="${W / 2}" y="92" text-anchor="middle" font-size="${MIN_READABLE}" fill="${C.muted}" letter-spacing="3" font-family="${SANS}">O QUE FICOU GRAVADO ATÉ AQUI</text>
 
 ${items.map(card).join('\n')}
 
-<text x="${W / 2}" y="${H - 22}" text-anchor="middle" font-size="12.5" fill="${C.muted}" letter-spacing="1.2" font-family="${SANS}">${esc(footer)}</text>
+<text x="${W / 2}" y="${H - 22}" text-anchor="middle" font-size="${MIN_READABLE}" fill="${C.muted}" letter-spacing="1.2" font-family="${SANS}">${esc(footer)}</text>
 </svg>
 `;
 }
