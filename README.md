@@ -1,90 +1,104 @@
 <!-- ╔══════════════════════════════════════════════════════════════════════╗ -->
-<!-- ║   AS AVENTURAS DE AGNES MILLIE NO PAÍS DOS SISTEMAS                ║ -->
+<!-- ║   AGNES MILLIE — UM DISCO EM DOIS LADOS                            ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════╝ -->
-<!-- Ilustrações: ./assets/*.svg | Cards gerados pelo workflow: ./profile/*.svg -->
-<!-- Citações: Lewis Carroll, 1865 e 1871 (domínio público). Traduções livres. -->
+<!-- Artes: ./assets/*.svg  — geradas por .github/scripts/gen-art.mjs        -->
+<!-- Cartões: ./profile/*.svg — gerados pelo workflow readme-cards.yml       -->
 
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="As aventuras de Agnes Millie no País dos Sistemas. Arquiteta de Sistemas, Full Stack Developer, Enterprise Solutions." />
+  <img src="./assets/cover.svg" width="100%" alt="Agnes Millie, Engenheira de Software Sênior. Capa em formato de disco de vinil tocando em um quarto silencioso." />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=IM+Fell+English&size=24&duration=3800&pause=1400&color=C0344D&center=true&vCenter=true&width=780&lines=%22Transformando+conhecimento+em+solu%C3%A7%C3%B5es+de+alto+impacto%22;Full+Stack+Developer+%7C+Systems+Architect+%7C+AI+Specialist;Gest%C3%A3o+Documental+%E2%80%A2+Automa%C3%A7%C3%A3o+Empresarial+%E2%80%A2+Integra%C3%A7%C3%A3o+de+APIs;Cada+projeto%2C+uma+aventura.+Cada+solu%C3%A7%C3%A3o%2C+um+legado." alt="Transformando conhecimento em soluções de alto impacto" />
+  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=600&size=26&duration=3800&pause=1400&color=C27049&center=true&vCenter=true&width=820&lines=Resolvendo+problemas+complexos+com+software+bem+constru%C3%ADdo;Arquitetura%2C+confiabilidade+e+engenharia+com+prop%C3%B3sito;Sistemas+que+continuam+simples+depois+de+crescer;Cada+entrega%2C+uma+faixa+bem+gravada" alt="Resolvendo problemas complexos com software bem construído" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=AgnesMillie&color=C27049&style=for-the-badge&label=AUDI%C3%8ANCIA" alt="Visualizações do perfil"/>
+  &nbsp;&nbsp;
+  <a href="https://github.com/AgnesMillie?tab=followers"><img src="https://img.shields.io/github/followers/AgnesMillie?style=for-the-badge&color=7E3B3B&labelColor=241A1B&label=OUVINTES" alt="Seguidores"/></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/AgnesMillie?tab=repositories"><img src="https://img.shields.io/github/stars/AgnesMillie?style=for-the-badge&color=D9A864&labelColor=241A1B&label=ESTRELAS" alt="Estrelas"/></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=AgnesMillie&color=C0344D&style=for-the-badge&label=VISUALIZACOES+DO+PERFIL" alt="Visualizações do perfil"/>
-  &nbsp;&nbsp;
-  <a href="https://github.com/AgnesMillie?tab=followers"><img src="https://img.shields.io/github/followers/AgnesMillie?style=for-the-badge&color=7B5EA7&labelColor=1A1726&label=SEGUIDORES" alt="Seguidores"/></a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/AgnesMillie?tab=repositories"><img src="https://img.shields.io/github/stars/AgnesMillie?style=for-the-badge&color=D4AF37&labelColor=1A1726&label=ESTRELAS" alt="Estrelas"/></a>
-</div>
-
-<br/>
-
-<p align="center">
-  <i>“That depends a good deal on where you want to get to,” said the Cat.</i><br/>
-  <sub>“Isso depende bastante de onde você quer chegar”, disse o Gato.</sub>
-</p>
-
-<p align="center"><b>Sumário</b></p>
-
-<p align="center">
-  <a href="#sobre">I. Descendo a toca do coelho</a> <sub>(Sobre mim)</sub><br/>
-  <a href="#especialidades">II. O baralho da Rainha de Copas</a> <sub>(Especialidades)</sub><br/>
-  <a href="#stack">III. Um chá muito maluco</a> <sub>(Stack tecnológico)</sub><br/>
-  <a href="#projetos">IV. O jardim de rosas da Rainha</a> <sub>(Projetos)</sub><br/>
-  <a href="#metricas">V. Quando o Chapeleiro brigou com o Tempo</a> <sub>(Métricas)</sub><br/>
-  <a href="#conquistas">VI. Todos ganharam e todos devem ter prêmios</a> <sub>(Conquistas)</sub>
-</p>
-
-<img src="./assets/divider.svg" width="100%" alt=""/>
-
-<!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                 CAPÍTULO I · PERFIL PROFISSIONAL                     -->
-<!-- ══════════════════════════════════════════════════════════════════════ -->
-
-<a id="sobre"></a>
-<img src="./assets/cap-1.svg" width="100%" alt="Capítulo I: Descendo a toca do coelho. Sobre mim."/>
-
-<p align="center">
-  <i>“Who are YOU?” said the Caterpillar.</i><br/>
-  <sub>“Quem é você?”, perguntou a Lagarta.</sub>
-</p>
-
-<table align="center" width="90%">
+<table width="86%">
   <tr>
-    <td width="58%" valign="top">
+    <td width="50%" valign="top" align="center">
+      <br/>
+      <b>L&nbsp;A&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp;A</b>
+      <br/><br/>
+      <a href="#a1"><b>A1</b>&nbsp;&nbsp;Quem está tocando</a><br/>
+      <sub>Sobre mim</sub>
+      <br/><br/>
+      <a href="#a2"><b>A2</b>&nbsp;&nbsp;O repertório</a><br/>
+      <sub>Especialidades</sub>
+      <br/><br/>
+      <a href="#a3"><b>A3</b>&nbsp;&nbsp;Os instrumentos</a><br/>
+      <sub>Stack tecnológico</sub>
+      <br/><br/>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <br/>
+      <b>L&nbsp;A&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp;B</b>
+      <br/><br/>
+      <a href="#b1"><b>B1</b>&nbsp;&nbsp;As gravações</a><br/>
+      <sub>Projetos em destaque</sub>
+      <br/><br/>
+      <a href="#b2"><b>B2</b>&nbsp;&nbsp;Rotação</a><br/>
+      <sub>Métricas e contribuições</sub>
+      <br/><br/>
+      <a href="#b3"><b>B3</b>&nbsp;&nbsp;Faixas bônus</a><br/>
+      <sub>Conquistas</sub>
+      <br/><br/>
+    </td>
+  </tr>
+</table>
+</div>
+
+<img src="./assets/groove.svg" width="100%" alt=""/>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!--                        A1 · QUEM ESTÁ TOCANDO                         -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<a id="a1"></a>
+<img src="./assets/track-a1.svg" width="100%" alt="Faixa A1: Quem está tocando. Sobre mim."/>
+
+<table align="center" width="92%">
+  <tr>
+    <td width="56%" valign="top">
       <br/>
       <h3>Agnes Millie</h3>
       <p>
-        Sou <strong>Agnes Millie</strong>, Arquiteta de Sistemas e Desenvolvedora Full Stack especializada em construir soluções corporativas robustas, escaláveis e inteligentes.
+        <strong>Engenheira de Software Sênior.</strong> Resolvo problemas complexos com software bem construído e engenharia com propósito.
       </p>
       <p>
-        Atuo na interseção entre <strong>arquitetura de software</strong>, <strong>automação de processos</strong>, <strong>inteligência artificial</strong> e <strong>gestão empresarial</strong> — transformando requisitos complexos em sistemas de alto valor que impactam diretamente os resultados organizacionais.
+        Trabalho onde a decisão técnica tem consequência: arquitetura de sistemas distribuídos, contratos bem definidos entre módulos, confiabilidade sob carga e código que continua simples depois de crescer.
       </p>
       <p>
-        Cada projeto neste perfil é uma <strong>aventura cuidadosamente conduzida</strong>: do conceito à entrega, da arquitetura ao deploy, do problema à solução elegante.
+        Gosto do trabalho silencioso — o que se faz antes de a complexidade virar dívida. Entre uma entrega e outra, café quente e um disco girando.
       </p>
       <blockquote>
-        <em>"A tecnologia bem aplicada não apenas resolve problemas — ela transforma organizações."</em>
+        <em>“Engenharia não é adicionar o que impressiona: é remover o que não precisa existir.”</em>
       </blockquote>
       <br/>
       <p>
-        <img src="https://img.shields.io/badge/Localiza%C3%A7%C3%A3o-Brasil-3E7A5C?style=flat-square&labelColor=1A1726" alt="Localização: Brasil"/>
+        <img src="https://img.shields.io/badge/Onde-Brasil-6E8674?style=flat-square&labelColor=241A1B" alt="Onde: Brasil"/>
         &nbsp;
-        <img src="https://img.shields.io/badge/Status-Dispon%C3%ADvel_para_Projetos-D4AF37?style=flat-square&labelColor=1A1726" alt="Status: disponível para projetos"/>
+        <img src="https://img.shields.io/badge/Aberta_a-Novos_projetos-D9A864?style=flat-square&labelColor=241A1B" alt="Aberta a novos projetos"/>
         &nbsp;
-        <img src="https://img.shields.io/badge/Idiomas-PT_%E2%80%A2_EN_%E2%80%A2_ES-7B5EA7?style=flat-square&labelColor=1A1726" alt="Idiomas: PT, EN, ES"/>
+        <img src="https://img.shields.io/badge/Idiomas-PT_%C2%B7_EN_%C2%B7_ES-C98F86?style=flat-square&labelColor=241A1B" alt="Idiomas: PT, EN, ES"/>
       </p>
       <p>
-        <a href="https://agnesmillie.github.io/agnesmillie-portfolio/"><img src="https://img.shields.io/badge/Portf%C3%B3lio-Visitar-C0344D?style=for-the-badge&labelColor=1A1726" alt="Visitar portfólio"/></a>
+        <a href="https://agnesmillie.github.io/agnesmillie-portfolio/"><img src="https://img.shields.io/badge/Portf%C3%B3lio-Ouvir_o_disco_inteiro-C27049?style=for-the-badge&labelColor=241A1B" alt="Visitar portfólio"/></a>
       </p>
       <br/>
     </td>
-    <td width="42%" valign="center" align="center">
+    <td width="44%" valign="center" align="center">
       <br/>
       <img src="./profile/stats.svg" alt="Estatísticas do GitHub de Agnes Millie" />
       <br/><br/>
@@ -94,170 +108,149 @@
   </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="./assets/groove.svg" width="100%" alt=""/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--              CAPÍTULO II · CATÁLOGO DE ESPECIALIDADES                -->
+<!--                          A2 · O REPERTÓRIO                            -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
-<a id="especialidades"></a>
-<img src="./assets/cap-2.svg" width="100%" alt="Capítulo II: O baralho da Rainha de Copas. Especialidades."/>
-
-<p align="center">
-  <i>“Why, sometimes I’ve believed as many as six impossible things before breakfast.”</i><br/>
-  <sub>“Ora, às vezes já acreditei em seis coisas impossíveis antes do café da manhã.” A Rainha Branca</sub>
-</p>
+<a id="a2"></a>
+<img src="./assets/track-a2.svg" width="100%" alt="Faixa A2: O repertório. Especialidades."/>
 
 <div align="center">
-<table width="92%">
+<table width="94%">
   <tr>
     <td align="center" width="33%" valign="top">
       <br/>
-      <img src="https://skillicons.dev/icons?i=react,nextjs,angular,vue" height="40" alt="React, Next.js, Angular, Vue"/>
+      <img src="https://skillicons.dev/icons?i=react,nextjs,angular,vue&theme=dark" height="40" alt="React, Next.js, Angular, Vue"/>
       <br/><br/>
-      <strong>♠︎ Desenvolvimento Full Stack</strong>
+      <strong>♪&nbsp; Desenvolvimento Full Stack</strong>
       <br/>
       <sub>Interfaces modernas e APIs robustas,<br/>do frontend ao backend corporativo.</sub>
-      <br/>
-      <br/>
-      <img src="https://img.shields.io/badge/React-Expert-61DAFB?style=flat-square&labelColor=1A1726&logo=react&logoColor=61DAFB" alt="React: Expert"/>
-      <img src="https://img.shields.io/badge/Node.js-Expert-339933?style=flat-square&labelColor=1A1726&logo=node.js&logoColor=339933" alt="Node.js: Expert"/>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/React-Especialista-C27049?style=flat-square&labelColor=241A1B" alt="React: especialista"/>
+      <img src="https://img.shields.io/badge/Node.js-Especialista-C27049?style=flat-square&labelColor=241A1B" alt="Node.js: especialista"/>
       <br/>
     </td>
     <td align="center" width="33%" valign="top">
       <br/>
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,terraform" height="40" alt="Docker, Kubernetes, AWS, Terraform"/>
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,terraform&theme=dark" height="40" alt="Docker, Kubernetes, AWS, Terraform"/>
       <br/><br/>
-      <strong>♥︎ Arquitetura & DevOps</strong>
+      <strong>♪&nbsp; Arquitetura &amp; DevOps</strong>
       <br/>
       <sub>Infraestrutura escalável, CI/CD<br/>e orquestração de microsserviços.</sub>
-      <br/>
-      <br/>
-      <img src="https://img.shields.io/badge/AWS-Advanced-FF9900?style=flat-square&labelColor=1A1726&logo=amazon-aws&logoColor=FF9900" alt="AWS: Advanced"/>
-      <img src="https://img.shields.io/badge/Docker-Expert-2496ED?style=flat-square&labelColor=1A1726&logo=docker&logoColor=2496ED" alt="Docker: Expert"/>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/AWS-Avan%C3%A7ado-D9A864?style=flat-square&labelColor=241A1B" alt="AWS: avançado"/>
+      <img src="https://img.shields.io/badge/Docker-Especialista-D9A864?style=flat-square&labelColor=241A1B" alt="Docker: especialista"/>
       <br/>
     </td>
     <td align="center" width="33%" valign="top">
       <br/>
-      <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,opencv" height="40" alt="Python, TensorFlow, PyTorch, OpenCV"/>
+      <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,opencv&theme=dark" height="40" alt="Python, TensorFlow, PyTorch, OpenCV"/>
       <br/><br/>
-      <strong>♦︎ IA & Automação</strong>
+      <strong>♪&nbsp; IA &amp; Automação</strong>
       <br/>
       <sub>Machine learning, NLP e automação<br/>inteligente de processos empresariais.</sub>
-      <br/>
-      <br/>
-      <img src="https://img.shields.io/badge/Python-Expert-3776AB?style=flat-square&labelColor=1A1726&logo=python&logoColor=3776AB" alt="Python: Expert"/>
-      <img src="https://img.shields.io/badge/TensorFlow-Advanced-FF6F00?style=flat-square&labelColor=1A1726&logo=tensorflow&logoColor=FF6F00" alt="TensorFlow: Advanced"/>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Python-Especialista-C98F86?style=flat-square&labelColor=241A1B" alt="Python: especialista"/>
+      <img src="https://img.shields.io/badge/TensorFlow-Avan%C3%A7ado-C98F86?style=flat-square&labelColor=241A1B" alt="TensorFlow: avançado"/>
       <br/>
     </td>
   </tr>
   <tr>
     <td align="center" width="33%" valign="top">
       <br/>
-      <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,elasticsearch" height="40" alt="PostgreSQL, MongoDB, Redis, Elasticsearch"/>
+      <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,elasticsearch&theme=dark" height="40" alt="PostgreSQL, MongoDB, Redis, Elasticsearch"/>
       <br/><br/>
-      <strong>♣︎ Gestão de Dados</strong>
+      <strong>♪&nbsp; Dados &amp; Persistência</strong>
       <br/>
       <sub>Modelagem, performance e integridade<br/>em bancos relacionais e NoSQL.</sub>
-      <br/>
-      <br/>
-      <img src="https://img.shields.io/badge/PostgreSQL-Expert-316192?style=flat-square&labelColor=1A1726&logo=postgresql&logoColor=316192" alt="PostgreSQL: Expert"/>
-      <img src="https://img.shields.io/badge/MongoDB-Advanced-47A248?style=flat-square&labelColor=1A1726&logo=mongodb&logoColor=47A248" alt="MongoDB: Advanced"/>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/PostgreSQL-Especialista-6E8674?style=flat-square&labelColor=241A1B" alt="PostgreSQL: especialista"/>
+      <img src="https://img.shields.io/badge/MongoDB-Avan%C3%A7ado-6E8674?style=flat-square&labelColor=241A1B" alt="MongoDB: avançado"/>
       <br/>
     </td>
     <td align="center" width="33%" valign="top">
       <br/>
-      <img src="https://skillicons.dev/icons?i=graphql,fastapi,spring,kafka" height="40" alt="GraphQL, FastAPI, Spring, Kafka"/>
+      <img src="https://skillicons.dev/icons?i=graphql,fastapi,spring,kafka&theme=dark" height="40" alt="GraphQL, FastAPI, Spring, Kafka"/>
       <br/><br/>
-      <strong>♥︎ Integração de Sistemas</strong>
+      <strong>♪&nbsp; Integração de Sistemas</strong>
       <br/>
-      <sub>REST, GraphQL, webhooks e<br/>integrações corporativas complexas.</sub>
-      <br/>
-      <br/>
-      <img src="https://img.shields.io/badge/REST_APIs-Expert-009688?style=flat-square&labelColor=1A1726" alt="REST APIs: Expert"/>
-      <img src="https://img.shields.io/badge/GraphQL-Advanced-E10098?style=flat-square&labelColor=1A1726&logo=graphql&logoColor=E10098" alt="GraphQL: Advanced"/>
+      <sub>REST, GraphQL, mensageria e<br/>integrações corporativas complexas.</sub>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/APIs_REST-Especialista-C27049?style=flat-square&labelColor=241A1B" alt="APIs REST: especialista"/>
+      <img src="https://img.shields.io/badge/GraphQL-Avan%C3%A7ado-C27049?style=flat-square&labelColor=241A1B" alt="GraphQL: avançado"/>
       <br/>
     </td>
     <td align="center" width="33%" valign="top">
       <br/>
-      <img src="https://skillicons.dev/icons?i=figma,tailwind,sass,materialui" height="40" alt="Figma, Tailwind, Sass, Material UI"/>
+      <img src="https://skillicons.dev/icons?i=figma,tailwind,sass,materialui&theme=dark" height="40" alt="Figma, Tailwind, Sass, Material UI"/>
       <br/><br/>
-      <strong>♠︎ UX/UI & Design Systems</strong>
+      <strong>♪&nbsp; UX/UI &amp; Design Systems</strong>
       <br/>
       <sub>Experiências digitais elegantes,<br/>acessíveis e orientadas ao usuário.</sub>
-      <br/>
-      <br/>
-      <img src="https://img.shields.io/badge/Figma-Advanced-F24E1E?style=flat-square&labelColor=1A1726&logo=figma&logoColor=F24E1E" alt="Figma: Advanced"/>
-      <img src="https://img.shields.io/badge/Tailwind-Expert-06B6D4?style=flat-square&labelColor=1A1726&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind: Expert"/>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Figma-Avan%C3%A7ado-D9A864?style=flat-square&labelColor=241A1B" alt="Figma: avançado"/>
+      <img src="https://img.shields.io/badge/Tailwind-Especialista-D9A864?style=flat-square&labelColor=241A1B" alt="Tailwind: especialista"/>
       <br/>
     </td>
   </tr>
 </table>
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="./assets/groove.svg" width="100%" alt=""/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                 CAPÍTULO III · STACK TECNOLÓGICO                     -->
+<!--                        A3 · OS INSTRUMENTOS                           -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
-<a id="stack"></a>
-<img src="./assets/cap-3.svg" width="100%" alt="Capítulo III: Um chá muito maluco. Stack tecnológico."/>
-
-<p align="center">
-  <i>“…it’s always tea-time…”</i><br/>
-  <sub>“…é sempre hora do chá…”, suspirou o Chapeleiro.</sub>
-</p>
+<a id="a3"></a>
+<img src="./assets/track-a3.svg" width="100%" alt="Faixa A3: Os instrumentos. Stack tecnológico."/>
 
 <div align="center">
 
-**Linguagens de programação**
+**Linguagens**
 
-<img src="https://skillicons.dev/icons?i=python,java,typescript,javascript,go,csharp,php,kotlin&perline=8" height="48" alt="Python, Java, TypeScript, JavaScript, Go, C#, PHP, Kotlin"/>
+<img src="https://skillicons.dev/icons?i=python,java,typescript,javascript,go,csharp,php,kotlin&perline=8&theme=dark" height="48" alt="Python, Java, TypeScript, JavaScript, Go, C#, PHP, Kotlin"/>
 
 <br/><br/>
 
 **Frameworks e bibliotecas**
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,angular,vue,nodejs,fastapi,spring,flutter&perline=8" height="48" alt="React, Next.js, Angular, Vue, Node.js, FastAPI, Spring, Flutter"/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,angular,vue,nodejs,fastapi,spring,flutter&perline=8&theme=dark" height="48" alt="React, Next.js, Angular, Vue, Node.js, FastAPI, Spring, Flutter"/>
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=laravel,express,nestjs,django,graphql,redux,prisma,jest&perline=8" height="48" alt="Laravel, Express, NestJS, Django, GraphQL, Redux, Prisma, Jest"/>
+<img src="https://skillicons.dev/icons?i=laravel,express,nestjs,django,graphql,redux,prisma,jest&perline=8&theme=dark" height="48" alt="Laravel, Express, NestJS, Django, GraphQL, Redux, Prisma, Jest"/>
 
 <br/><br/>
 
-**Bancos de dados e storage**
+**Dados e storage**
 
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,sqlite,elasticsearch,supabase,firebase&perline=8" height="48" alt="PostgreSQL, MongoDB, MySQL, Redis, SQLite, Elasticsearch, Supabase, Firebase"/>
-
-<br/><br/>
-
-**Cloud e infraestrutura**
-
-<img src="https://skillicons.dev/icons?i=aws,azure,gcp,docker,kubernetes,terraform,nginx,linux&perline=8" height="48" alt="AWS, Azure, GCP, Docker, Kubernetes, Terraform, Nginx, Linux"/>
+<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,sqlite,elasticsearch,supabase,firebase&perline=8&theme=dark" height="48" alt="PostgreSQL, MongoDB, MySQL, Redis, SQLite, Elasticsearch, Supabase, Firebase"/>
 
 <br/><br/>
 
-**Ferramentas e metodologias**
+**Nuvem e infraestrutura**
 
-<img src="https://skillicons.dev/icons?i=git,github,gitlab,jira,figma,vscode,postman,grafana&perline=8" height="48" alt="Git, GitHub, GitLab, Jira, Figma, VS Code, Postman, Grafana"/>
+<img src="https://skillicons.dev/icons?i=aws,azure,gcp,docker,kubernetes,terraform,nginx,linux&perline=8&theme=dark" height="48" alt="AWS, Azure, GCP, Docker, Kubernetes, Terraform, Nginx, Linux"/>
+
+<br/><br/>
+
+**Ferramentas**
+
+<img src="https://skillicons.dev/icons?i=git,github,gitlab,jira,figma,vscode,postman,grafana&perline=8&theme=dark" height="48" alt="Git, GitHub, GitLab, Jira, Figma, VS Code, Postman, Grafana"/>
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="./assets/groove.svg" width="100%" alt=""/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                  CAPÍTULO IV · PROJETOS EM DESTAQUE                  -->
+<!--                          B1 · AS GRAVAÇÕES                            -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
-<a id="projetos"></a>
-<img src="./assets/cap-4.svg" width="100%" alt="Capítulo IV: O jardim de rosas da Rainha. Projetos."/>
-
-<p align="center">
-  <i>“Curiouser and curiouser!” cried Alice.</i><br/>
-  <sub>“Cada vez mais curiosíssimo!”, exclamou Alice.</sub>
-</p>
+<a id="b1"></a>
+<img src="./assets/track-b1.svg" width="100%" alt="Faixa B1: As gravações. Projetos em destaque."/>
 
 <div align="center">
 <table>
@@ -281,64 +274,52 @@
 
 <br/>
 
-<a href="https://github.com/AgnesMillie?tab=repositories"><img src="https://img.shields.io/badge/Ver-Todos_os_reposit%C3%B3rios-7B5EA7?style=for-the-badge&labelColor=1A1726" alt="Ver todos os repositórios"/></a>
+<a href="https://github.com/AgnesMillie?tab=repositories"><img src="https://img.shields.io/badge/Cat%C3%A1logo_completo-Todos_os_reposit%C3%B3rios-7E3B3B?style=for-the-badge&labelColor=241A1B" alt="Ver todos os repositórios"/></a>
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="./assets/groove.svg" width="100%" alt=""/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                CAPÍTULO V · MÉTRICAS & CONTRIBUIÇÕES                 -->
+<!--                             B2 · ROTAÇÃO                              -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
-<a id="metricas"></a>
-<img src="./assets/cap-5.svg" width="100%" alt="Capítulo V: Quando o Chapeleiro brigou com o Tempo. Métricas."/>
-
-<p align="center">
-  <i>“If you knew Time as well as I do,” said the Hatter…</i><br/>
-  <sub>“Se você conhecesse o Tempo tão bem quanto eu”, disse o Chapeleiro…</sub>
-</p>
+<a id="b2"></a>
+<img src="./assets/track-b2.svg" width="100%" alt="Faixa B2: Rotação. Métricas e contribuições."/>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=AgnesMillie&theme=github-dark-blue&hide_border=true&background=1A1726&stroke=D4AF37&ring=C0344D&fire=D4AF37&currStreakLabel=D4AF37&sideLabels=F1E6CC&dates=A99CC4&sideNums=F1E6CC&currStreakNum=F1E6CC" alt="Sequência de contribuições no GitHub" />
+  <img src="https://streak-stats.demolab.com?user=AgnesMillie&hide_border=true&background=241A1B&stroke=7E3B3B&ring=C27049&fire=D9A864&currStreakLabel=D9A864&sideLabels=EFE1CD&dates=B79E92&sideNums=EFE1CD&currStreakNum=EFE1CD&excludeDaysLabel=B79E92" alt="Sequência de contribuições no GitHub" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="./profile/activity-graph.svg" width="96%" alt="Gráfico de atividade de contribuições dos últimos doze meses" />
+  <img src="./profile/activity-graph.svg" width="96%" alt="Contribuições das últimas 52 semanas desenhadas como a forma de onda de uma faixa" />
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="./assets/groove.svg" width="100%" alt=""/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--              CAPÍTULO VI · CONQUISTAS & RECONHECIMENTOS              -->
+<!--                           B3 · FAIXAS BÔNUS                           -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
-<a id="conquistas"></a>
-<img src="./assets/cap-6.svg" width="100%" alt="Capítulo VI: Todos ganharam e todos devem ter prêmios. Conquistas."/>
-
-<p align="center">
-  <i>“Everybody has won, and all must have prizes.”</i><br/>
-  <sub>“Todos ganharam, e todos devem ter prêmios”, decretou o Dodô.</sub>
-</p>
+<a id="b3"></a>
+<img src="./assets/track-b3.svg" width="100%" alt="Faixa B3: Faixas bônus. Conquistas."/>
 
 <div align="center">
-  <img src="./profile/trophies.svg" width="96%" alt="Conquistas do GitHub apresentadas como cartas de baralho" />
+  <img src="./profile/trophies.svg" width="96%" alt="Conquistas do GitHub apresentadas como fichas de faixa, cada uma com seu selo" />
 </div>
 
 <br/>
 
 <!-- ══════════════════════════════════════════════════════════════════════ -->
-<!--                               FIM                                    -->
+<!--                            FIM DO LADO B                              -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Fim. Um sorriso sem gato que some aos poucos. Agnes Millie, Arquiteta de Sistemas."/>
+  <img src="./assets/outro.svg" width="100%" alt="Fim do lado B. Obrigada por ouvir até o fim."/>
 </div>
 
 <div align="center">
-  <sub>
-    <em>"O conhecimento compartilhado é o único bem que cresce ao ser distribuído."</em>
-  </sub>
+  <sub><em>“O conhecimento compartilhado é o único bem que cresce ao ser distribuído.”</em></sub>
 </div>

@@ -1,24 +1,26 @@
-// Paleta e peças de desenho compartilhadas pelos cartões gerados em profile/.
-// As cores são as mesmas das ilustrações em assets/ (livro vitoriano / baralho).
-
-import { suit, suitDefs } from './suits.mjs';
+// Paleta e peças de desenho compartilhadas pelas artes do perfil.
+//
+// A referência é a ilustração do avatar: tapete vermelho, toca-discos, café
+// quente, luz baixa. Tons quentes e dessaturados — nada de cor saturada.
 
 export const C = {
-  bg: '#1A1726',
-  bgDeep: '#13101F',
-  panel: '#221B33',
-  panelAlt: '#2A2140',
-  gold: '#D4AF37',
-  goldLight: '#F6DC8A',
-  goldDark: '#8C6A12',
-  red: '#C0344D',
-  redDeep: '#B3263E',
-  purple: '#7B5EA7',
-  purpleSoft: '#A99CC4',
-  cream: '#F1E6CC',
+  ink: '#1B1214', // fundo mais profundo, quase preto quente
+  bg: '#241A1B', // fundo das peças
+  panel: '#2E2122', // cartões sobre o fundo
+  panelAlt: '#3A2A2A', // linhas de grade, separações
+  wine: '#7E3B3B', // bordô do tapete
+  clay: '#A8503F', // argila
+  terracotta: '#C27049', // terracota: acento principal
+  brass: '#D9A864', // latão envelhecido: títulos e números
+  brassSoft: '#E8C999', // latão claro, para brilhos
+  blush: '#C98F86', // rosa-poeira
+  moss: '#6E8674', // verde-musgo: contraponto frio
+  cream: '#EFE1CD', // papel: texto principal
+  muted: '#B79E92', // texto secundário
 };
 
 export const SERIF = "Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif";
+export const SANS = "'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif";
 
 const XML_ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' };
 
@@ -41,57 +43,43 @@ export function shortNum(value) {
   return numberFormat.format(value);
 }
 
-export { suit, suitDefs };
-
-/** Gradientes, filtros e símbolos usados por todos os cartões. */
+/** Gradientes e filtros usados pelas peças. */
 export function commonDefs() {
   return `
-<linearGradient id="goldv" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="${C.goldLight}"/><stop offset=".5" stop-color="${C.gold}"/><stop offset="1" stop-color="${C.goldDark}"/>
+<linearGradient id="brassv" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="${C.brassSoft}"/><stop offset=".55" stop-color="${C.brass}"/><stop offset="1" stop-color="#A97F43"/>
 </linearGradient>
 <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0" stop-color="${C.gold}" stop-opacity="0"/>
-  <stop offset=".5" stop-color="${C.gold}" stop-opacity=".9"/>
-  <stop offset="1" stop-color="${C.gold}" stop-opacity="0"/>
+  <stop offset="0" stop-color="${C.terracotta}" stop-opacity="0"/>
+  <stop offset=".5" stop-color="${C.brass}" stop-opacity=".75"/>
+  <stop offset="1" stop-color="${C.terracotta}" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0" stop-color="${C.goldLight}" stop-opacity="0"/>
-  <stop offset=".5" stop-color="${C.goldLight}" stop-opacity=".30"/>
-  <stop offset="1" stop-color="${C.goldLight}" stop-opacity="0"/>
+  <stop offset="0" stop-color="${C.brassSoft}" stop-opacity="0"/>
+  <stop offset=".5" stop-color="${C.brassSoft}" stop-opacity=".22"/>
+  <stop offset="1" stop-color="${C.brassSoft}" stop-opacity="0"/>
 </linearGradient>
-<radialGradient id="vignette" cx="50%" cy="38%" r="78%">
-  <stop offset="0" stop-color="${C.panelAlt}"/><stop offset=".62" stop-color="${C.bg}"/><stop offset="1" stop-color="${C.bgDeep}"/>
+<radialGradient id="lamp" cx="50%" cy="34%" r="80%">
+  <stop offset="0" stop-color="#3C2A29"/><stop offset=".55" stop-color="${C.bg}"/><stop offset="1" stop-color="${C.ink}"/>
 </radialGradient>
 <radialGradient id="spark">
-  <stop offset="0" stop-color="${C.goldLight}" stop-opacity=".95"/>
-  <stop offset=".45" stop-color="${C.gold}" stop-opacity=".45"/>
-  <stop offset="1" stop-color="${C.gold}" stop-opacity="0"/>
+  <stop offset="0" stop-color="${C.brassSoft}" stop-opacity=".95"/>
+  <stop offset=".45" stop-color="${C.brass}" stop-opacity=".4"/>
+  <stop offset="1" stop-color="${C.brass}" stop-opacity="0"/>
 </radialGradient>
 <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
   <feGaussianBlur stdDeviation="3" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-${suitDefs()}`;
+</filter>`;
 }
 
-/**
- * Moldura do cartão: fundo, filete duplo dourado e os quatro naipes nos cantos.
- * `w`/`h` são as dimensões totais do SVG.
- */
-export function frame(w, h) {
-  const corners = [
-    ['spade', 24, 30],
-    ['heart', w - 24, 30],
-    ['club', 24, h - 16],
-    ['diamond', w - 24, h - 16],
-  ];
+/** Moldura: luz de abajur ao centro, filete de latão e cantos arredondados. */
+export function frame(w, h, { rug = true } = {}) {
   return `
-<rect width="${w}" height="${h}" rx="14" fill="url(#vignette)"/>
-<rect x="3.5" y="3.5" width="${w - 7}" height="${h - 7}" rx="12" fill="none" stroke="${C.goldDark}" stroke-width="1.6"/>
-<rect x="9.5" y="9.5" width="${w - 19}" height="${h - 19}" rx="8" fill="none" stroke="${C.gold}" stroke-width=".7" stroke-opacity=".45"/>
-${corners
-  .map(([name, x, y], i) => suit(name, x, y, 13, i % 2 === 0 ? C.gold : C.redDeep, `opacity=".75" class="pip" style="animation-delay:${(i * 0.45).toFixed(2)}s"`))
-  .join('\n')}`;
+<rect width="${w}" height="${h}" rx="16" fill="url(#lamp)"/>
+${rug ? `<rect width="${w}" height="${h}" rx="16" fill="url(#rug)"/>` : ''}
+<rect x="4" y="4" width="${w - 8}" height="${h - 8}" rx="13" fill="none" stroke="${C.brass}" stroke-opacity=".38" stroke-width="1.4"/>
+<rect x="10" y="10" width="${w - 20}" height="${h - 20}" rx="9" fill="none" stroke="${C.terracotta}" stroke-opacity=".18" stroke-width=".8"/>`;
 }
 
 /** Filete ornamental horizontal centrado em (cx, y). */
@@ -100,30 +88,29 @@ export function rule(cx, y, width) {
 }
 
 /**
- * Animações compartilhadas. Em README o SVG é servido como imagem: só CSS/SMIL.
+ * Animações compartilhadas.
  *
- * Regra destes cartões: nenhum dado depende de animação para ser visto. O que
- * se move é enfeite (brilho, faísca, naipes). Há leitores que exibem o SVG
- * parado — e um cartão que só aparece animado é um cartão quebrado para eles.
+ * Regra destas peças: nenhum dado depende de animação para ser visto. O que se
+ * move é enfeite — há leitores que exibem o SVG parado, e um cartão que só
+ * aparece animado é um cartão quebrado para eles. Por isso toda animação parte
+ * de um estado já legível, e `.motion` some em prefers-reduced-motion.
  */
 export function commonStyle() {
   return `
   text { font-family: ${SERIF}; }
-  .pip { animation: pip 4.2s ease-in-out infinite; }
-  @keyframes pip { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
-  /* Quem pediu menos movimento perde só os laços decorativos, nunca o conteúdo. */
+  .pulse { animation: pulse 5s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
   @media (prefers-reduced-motion: reduce) {
-    .pip { animation: none; }
+    .pulse { animation: none; }
     .motion { display: none; }
   }`;
 }
 
 /** Abre o documento SVG com título e descrição acessíveis. */
-export function open(w, h, title, desc, style) {
+export function open(w, h, title, desc, style, extraDefs = '') {
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-labelledby="t d">
 <title id="t">${esc(title)}</title>
 <desc id="d">${esc(desc)}</desc>
-<defs>${commonDefs()}</defs>
-<style>${commonStyle()}${style || ''}</style>
-${frame(w, h)}`;
+<defs>${commonDefs()}${extraDefs}</defs>
+<style>${commonStyle()}${style || ''}</style>`;
 }
