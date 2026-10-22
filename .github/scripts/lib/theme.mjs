@@ -83,6 +83,26 @@ ${rug ? `<rect width="${w}" height="${h}" rx="16" fill="url(#rug)"/>` : ''}
 }
 
 /**
+ * Piso de tipografia das peças, em unidades do SVG.
+ *
+ * O README exibe uma imagem de 1200 de largura em cerca de 870 px, ou seja,
+ * a ~72% do tamanho nativo. Para o texto chegar ao leitor com 11 px — o
+ * mínimo legível — ele precisa ser desenhado com 11 / 0,72 ≈ 15,2. Daí 16:
+ * nenhum texto informativo das peças desce abaixo disso.
+ */
+export const MIN_READABLE = 16;
+
+/**
+ * Maior tamanho de fonte, até `max`, em que o texto ainda cabe em `width`.
+ * Nunca desce de MIN_READABLE: se nem assim couber, quem cede é o layout.
+ */
+export function fit(text, max, width, floor = MIN_READABLE) {
+  const estimated = textWidth(text, max);
+  if (estimated <= width) return max;
+  return Math.max(floor, Math.floor(((max * width) / estimated) * 10) / 10);
+}
+
+/**
  * Largura aproximada de um texto, para dimensionar pílulas e caixas.
  * É estimativa: o navegador é quem mede de verdade, então erra para mais.
  */

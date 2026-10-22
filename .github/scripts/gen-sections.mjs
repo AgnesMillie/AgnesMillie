@@ -9,7 +9,7 @@
 
 import { writeFile, mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import { C, esc, frame, open, pillRow, rule, SANS, textWidth } from './lib/theme.mjs';
+import { C, esc, fit, frame, MIN_READABLE, open, pillRow, rule, SANS, textWidth } from './lib/theme.mjs';
 import { note, rugPattern, vinyl, vinylDefs, waveform } from './lib/motifs.mjs';
 
 const W = 1200;
@@ -45,7 +45,7 @@ ${vinyl(42, 46, 22, { spin: 12, label: C.wine, grooves: 5, id: `ti-${track.id}` 
 <text x="80" y="51" font-size="15" fill="${C.brass}" letter-spacing="1.4" font-family="${SANS}">${track.tag}</text>
 
 <text x="116" y="44" font-size="21" fill="${C.cream}">${esc(track.title)}</text>
-<text x="117" y="66" font-size="11.5" fill="${C.muted}" letter-spacing="2.4" font-family="${SANS}">${esc(track.sub.toUpperCase())}</text>
+<text x="117" y="68" font-size="${MIN_READABLE}" fill="${C.muted}" letter-spacing="1.6" font-family="${SANS}">${esc(track.sub.toUpperCase())}</text>
 ${waveform(w - 150, 46, 118, 26, 16, track.seed, C.terracotta, '.4')}
 </svg>
 `;
@@ -55,9 +55,9 @@ ${waveform(w - 150, 46, 118, 26, 16, track.seed, C.terracotta, '.4')}
 
 function tags() {
   const items = ['Brasil', 'Aberta a novos projetos', 'PT · EN · ES'];
-  const h = 44;
-  const row = pillRow(0, 9, items, { size: 12.5, height: 26, gap: 10, fg: C.cream, bg: C.panel, border: C.brass });
-  const width = Math.round(items.reduce((sum, t) => sum + textWidth(t, 12.5) + 26, 0) + 10 * (items.length - 1));
+  const h = 50;
+  const row = pillRow(0, 9, items, { size: MIN_READABLE, height: 32, gap: 10, fg: C.cream, bg: C.panel, border: C.brass });
+  const width = Math.round(items.reduce((sum, t) => sum + textWidth(t, MIN_READABLE) + 26, 0) + 10 * (items.length - 1));
 
   return `${open(width, h, 'Brasil · Aberta a novos projetos · PT, EN e ES', 'Selos com localização, disponibilidade e idiomas.', '', '')}
 ${row.svg}
@@ -67,9 +67,9 @@ ${row.svg}
 
 /** Botão desenhado; vira link ao ser embrulhado em <a> no README. */
 function button(label, { accent = C.terracotta, id = 'btn' } = {}) {
-  const size = 13.5;
-  const w = Math.round(textWidth(label, size, { tracking: 1.6 }) + 92);
-  const h = 44;
+  const size = MIN_READABLE;
+  const w = Math.round(textWidth(label, size, { tracking: 1.6 }) + 96);
+  const h = 48;
   return `${open(w, h, label, `Botão: ${label}.`, '', vinylDefs(id))}
 <rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="10" fill="${C.panel}" stroke="${accent}" stroke-opacity=".6" stroke-width="1.3"/>
 <rect x="5" y="5" width="${w - 10}" height="${h - 10}" rx="7" fill="none" stroke="${accent}" stroke-opacity=".2"/>
@@ -128,50 +128,58 @@ function fader(x, y, width, label, level) {
   const filled = level === 'Especialista' ? width : width * 0.68;
   const knob = x + filled;
   return `
-<text x="${x}" y="${y - 7}" font-size="11.5" fill="${C.cream}" font-family="${SANS}">${esc(label)}</text>
-<text x="${x + width}" y="${y - 7}" text-anchor="end" font-size="10" fill="${C.muted}" letter-spacing="1.4" font-family="${SANS}">${esc(level.toUpperCase())}</text>
+<text x="${x}" y="${y - 9}" font-size="${MIN_READABLE}" fill="${C.cream}" font-family="${SANS}">${esc(label)}</text>
+<text x="${x + width}" y="${y - 9}" text-anchor="end" font-size="${MIN_READABLE}" fill="${C.muted}" letter-spacing="1" font-family="${SANS}">${esc(level.toUpperCase())}</text>
 <rect x="${x}" y="${y}" width="${width}" height="4" rx="2" fill="${C.panelAlt}"/>
 <rect x="${x}" y="${y}" width="${filled.toFixed(1)}" height="4" rx="2" fill="${C.terracotta}"/>
 <circle cx="${knob.toFixed(1)}" cy="${y + 2}" r="5" fill="${C.brass}"/>
 <circle cx="${knob.toFixed(1)}" cy="${y + 2}" r="2" fill="${C.ink}" fill-opacity=".45"/>`;
 }
 
-function skillCard(skill, index) {
-  const cols = 3;
-  const cardW = 368;
-  const cardH = 248;
-  const gapX = 18;
-  const gapY = 18;
-  const x = 36 + (index % cols) * (cardW + gapX);
-  const y = 36 + Math.floor(index / cols) * (cardH + gapY);
+const CARD = { cols: 3, w: 368, gapX: 18, gapY: 18, top: 36, left: 36, pillsTop: 126 };
 
-  const stack = pillRow(x + 22, y + 118, skill.stack, {
-    size: 11,
-    height: 23,
-    padding: 10,
-    gap: 7,
-    maxWidth: cardW - 44,
-    fg: C.muted,
-    bg: C.bg,
-    border: C.terracotta,
-  });
+/** Altura que a tira de pílulas ocupa nesta ficha (pode quebrar em 2 linhas). */
+function stackHeight(skill) {
+  return pillRow(0, 0, skill.stack, { ...PILL_STYLE, maxWidth: CARD.w - 44 }).height;
+}
+
+const PILL_STYLE = {
+  size: MIN_READABLE,
+  height: 30,
+  padding: 11,
+  gap: 7,
+  fg: C.muted,
+  bg: C.bg,
+  border: C.terracotta,
+};
+
+function skillCard(skill, index, cardH, faderTop) {
+  const { cols, w: cardW, gapX, gapY, top, left, pillsTop } = CARD;
+  const x = left + (index % cols) * (cardW + gapX);
+  const y = top + Math.floor(index / cols) * (cardH + gapY);
+
+  const stack = pillRow(x + 22, y + pillsTop, skill.stack, { ...PILL_STYLE, maxWidth: cardW - 44 });
 
   return `
 <g>
   <rect x="${x}" y="${y}" width="${cardW}" height="${cardH}" rx="12" fill="${C.panel}" stroke="${C.brass}" stroke-opacity=".28" stroke-width="1.1"/>
   ${note(x + 32, y + 42, 22, C.terracotta, 'class="pulse"')}
-  <text x="${x + 48}" y="${y + 40}" font-size="18.5" fill="${C.cream}">${esc(skill.title)}</text>
+  <text x="${x + 48}" y="${y + 42}" font-size="20" fill="${C.cream}">${esc(skill.title)}</text>
   <rect x="${x + 22}" y="${y + 54}" width="${cardW - 44}" height="1" fill="url(#rule)"/>
-  <text x="${x + 22}" y="${y + 78}" font-size="12.5" fill="${C.muted}" font-family="${SANS}">${esc(skill.lines[0])}</text>
-  <text x="${x + 22}" y="${y + 96}" font-size="12.5" fill="${C.muted}" font-family="${SANS}">${esc(skill.lines[1])}</text>
+  <text x="${x + 22}" y="${y + 82}" font-size="${fit(skill.lines[0], 17, cardW - 44)}" fill="${C.muted}" font-family="${SANS}">${esc(skill.lines[0])}</text>
+  <text x="${x + 22}" y="${y + 104}" font-size="${fit(skill.lines[1], 17, cardW - 44)}" fill="${C.muted}" font-family="${SANS}">${esc(skill.lines[1])}</text>
   ${stack.svg}
-  ${fader(x + 22, y + 182, cardW - 44, skill.levels[0][0], skill.levels[0][1])}
-  ${fader(x + 22, y + 220, cardW - 44, skill.levels[1][0], skill.levels[1][1])}
+  ${fader(x + 22, y + faderTop, cardW - 44, skill.levels[0][0], skill.levels[0][1])}
+  ${fader(x + 22, y + faderTop + 44, cardW - 44, skill.levels[1][0], skill.levels[1][1])}
 </g>`;
 }
 
 function skills() {
-  const H = 36 + 2 * 248 + 18 + 36;
+  // Todas as fichas têm a altura da que precisa de mais espaço para as pílulas.
+  const pills = Math.max(...SKILLS.map(stackHeight));
+  const faderTop = CARD.pillsTop + pills + 44;
+  const cardH = faderTop + 44 + 26;
+  const H = CARD.top * 2 + 2 * cardH + CARD.gapY;
   const described = SKILLS.map((s) => `${s.title} (${s.stack.join(', ')})`).join('; ');
   return `${open(
     W,
@@ -182,7 +190,7 @@ function skills() {
     rugPattern(),
   )}
 ${frame(W, H)}
-${SKILLS.map(skillCard).join('\n')}
+${SKILLS.map((skill, i) => skillCard(skill, i, cardH, faderTop)).join('\n')}
 </svg>
 `;
 }
@@ -207,10 +215,10 @@ function stack() {
   const blocks = [];
 
   STACK.forEach((group, i) => {
-    const row = pillRow(left, y + 22, group.items, {
-      size: 12,
-      height: 27,
-      padding: 12,
+    const row = pillRow(left, y + 28, group.items, {
+      size: MIN_READABLE,
+      height: 32,
+      padding: 13,
       gap: 8,
       lineGap: 9,
       maxWidth,
@@ -220,12 +228,12 @@ function stack() {
     });
     blocks.push(`
 <g>
-  ${note(left + 7, y + 8, 18, C.brass, `class="pulse" style="animation-delay:${(i * 0.4).toFixed(1)}s"`)}
-  <text x="${left + 24}" y="${y + 4}" font-size="13" fill="${C.brass}" letter-spacing="2.6" font-family="${SANS}">${esc(group.group.toUpperCase())}</text>
+  ${note(left + 8, y + 10, 20, C.brass, `class="pulse" style="animation-delay:${(i * 0.4).toFixed(1)}s"`)}
+  <text x="${left + 26}" y="${y + 5}" font-size="${MIN_READABLE}" fill="${C.brass}" letter-spacing="2" font-family="${SANS}">${esc(group.group.toUpperCase())}</text>
   <rect x="${left}" y="${y + 13}" width="${maxWidth}" height="1" fill="url(#rule)"/>
   ${row.svg}
 </g>`);
-    y += 22 + row.height + 34;
+    y += 28 + row.height + 36;
   });
 
   const H = y + 10;
