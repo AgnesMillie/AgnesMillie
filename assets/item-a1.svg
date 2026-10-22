@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 560 92" width="560" height="92" role="img" aria-labelledby="t d">
+<title id="t">A1 — Quem está tocando</title>
+<desc id="d">Etiqueta da faixa A1: Quem está tocando. Leva à seção de sobre mim.</desc>
+<defs>
+<linearGradient id="brassv" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#E8C999"/><stop offset=".55" stop-color="#D9A864"/><stop offset="1" stop-color="#A97F43"/>
+</linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#C27049" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#D9A864" stop-opacity=".75"/>
+  <stop offset="1" stop-color="#C27049" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#E8C999" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#E8C999" stop-opacity=".22"/>
+  <stop offset="1" stop-color="#E8C999" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="lamp" cx="50%" cy="34%" r="80%">
+  <stop offset="0" stop-color="#3C2A29"/><stop offset=".55" stop-color="#241A1B"/><stop offset="1" stop-color="#1B1214"/>
+</radialGradient>
+<radialGradient id="spark">
+  <stop offset="0" stop-color="#E8C999" stop-opacity=".95"/>
+  <stop offset=".45" stop-color="#D9A864" stop-opacity=".4"/>
+  <stop offset="1" stop-color="#D9A864" stop-opacity="0"/>
+</radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<pattern id="rug" width="54" height="54" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+  <rect width="54" height="54" fill="none"/>
+  <path d="M27 6 L48 27 L27 48 L6 27 Z" fill="none" stroke="#A8503F" stroke-opacity=".10" stroke-width="1"/>
+  <circle cx="27" cy="27" r="3" fill="#A8503F" fill-opacity=".08"/>
+</pattern>
+<radialGradient id="ti-a1-disc">
+  <stop offset=".3" stop-color="#1C1416"/>
+  <stop offset=".86" stop-color="#2A1E20"/>
+  <stop offset="1" stop-color="#140E10"/>
+</radialGradient>
+<radialGradient id="ti-a1-shine">
+  <stop offset="0" stop-color="#EFE1CD" stop-opacity=".16"/>
+  <stop offset="1" stop-color="#EFE1CD" stop-opacity="0"/>
+</radialGradient></defs>
+<style>
+  text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+  .pulse { animation: pulse 5s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse { animation: none; }
+    .motion { display: none; }
+  }</style>
+<rect width="560" height="92" rx="12" fill="url(#lamp)"/>
+<rect width="560" height="92" rx="12" fill="url(#rug)"/>
+<rect x="3" y="3" width="554" height="86" rx="10" fill="none" stroke="#D9A864" stroke-opacity=".3" stroke-width="1.1"/>
+
+
+<g transform="translate(42 46)">
+  <circle cx="0" cy="0" r="22" fill="url(#ti-a1-disc)"/>
+  <circle cx="0" cy="0" r="11.7" fill="none" stroke="#EFE1CD" stroke-opacity="0.140" stroke-width="0.26"/><circle cx="0" cy="0" r="14.2" fill="none" stroke="#EFE1CD" stroke-opacity="0.080" stroke-width="0.26"/><circle cx="0" cy="0" r="16.6" fill="none" stroke="#EFE1CD" stroke-opacity="0.080" stroke-width="0.26"/><circle cx="0" cy="0" r="19.1" fill="none" stroke="#EFE1CD" stroke-opacity="0.140" stroke-width="0.26"/><circle cx="0" cy="0" r="21.6" fill="none" stroke="#EFE1CD" stroke-opacity="0.080" stroke-width="0.26"/>
+  <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="7.9" fill="#7E3B3B"/>
+    <circle cx="0" cy="0" r="7.9" fill="none" stroke="#EFE1CD" stroke-opacity=".25" stroke-width="1"/>
+    <path d="M-4.8 0 a4.8 4.8 0 0 1 9.7 0" fill="none" stroke="#EFE1CD" stroke-opacity=".35" stroke-width="1"/>
+    <circle cx="0" cy="-4.0" r="0.7" fill="#EFE1CD" fill-opacity=".5"/>
+  </g>
+  <circle cx="0" cy="0" r="1.0" fill="#1B1214"/>
+  <circle cx="-6.6" cy="-9.2" r="11.4" fill="url(#ti-a1-shine)" opacity=".5"/>
+</g>
+<text x="80" y="51" font-size="15" fill="#D9A864" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">A1</text>
+
+<text x="116" y="44" font-size="21" fill="#EFE1CD">Quem está tocando</text>
+<text x="117" y="66" font-size="11.5" fill="#B79E92" letter-spacing="2.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">SOBRE MIM</text>
+<rect x="410.0" y="43.6" width="3.8" height="4.9" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="417.4" y="42.5" width="3.8" height="7.0" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="424.8" y="38.7" width="3.8" height="14.6" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="432.1" y="40.8" width="3.8" height="10.4" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="439.5" y="39.6" width="3.8" height="12.7" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="446.9" y="36.6" width="3.8" height="18.7" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="454.3" y="35.0" width="3.8" height="21.9" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="461.6" y="35.7" width="3.8" height="20.5" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="469.0" y="41.4" width="3.8" height="9.2" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="476.4" y="36.8" width="3.8" height="18.5" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="483.8" y="35.5" width="3.8" height="20.9" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="491.1" y="40.0" width="3.8" height="12.1" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="498.5" y="37.4" width="3.8" height="17.2" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="505.9" y="43.0" width="3.8" height="6.0" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="513.3" y="40.9" width="3.8" height="10.2" rx="1.9" fill="#C27049" fill-opacity=".4"/><rect x="520.6" y="43.6" width="3.8" height="4.8" rx="1.9" fill="#C27049" fill-opacity=".4"/>
+</svg>

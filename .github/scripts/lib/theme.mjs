@@ -82,6 +82,56 @@ ${rug ? `<rect width="${w}" height="${h}" rx="16" fill="url(#rug)"/>` : ''}
 <rect x="10" y="10" width="${w - 20}" height="${h - 20}" rx="9" fill="none" stroke="${C.terracotta}" stroke-opacity=".18" stroke-width=".8"/>`;
 }
 
+/**
+ * Largura aproximada de um texto, para dimensionar pílulas e caixas.
+ * É estimativa: o navegador é quem mede de verdade, então erra para mais.
+ */
+export function textWidth(text, size, { bold = false, tracking = 0 } = {}) {
+  let units = 0;
+  for (const ch of String(text)) {
+    if (/[iIljt.,:;'!|]/.test(ch)) units += 0.32;
+    else if (/[A-ZÀ-ÖØ-Þ]/.test(ch)) units += 0.68;
+    else if (/[mwMW]/.test(ch)) units += 0.88;
+    else if (ch === ' ') units += 0.3;
+    else units += 0.54;
+  }
+  return units * size * (bold ? 1.06 : 1) + tracking * String(text).length;
+}
+
+/** Pílula com texto centralizado; devolve { svg, width }. */
+export function pill(x, y, text, { size = 12.5, fg = C.cream, bg = C.panel, border = C.brass, padding = 13, height = 26 } = {}) {
+  const width = Math.round(textWidth(text, size) + padding * 2);
+  return {
+    width,
+    svg: `<g>
+  <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${height / 2}" fill="${bg}" stroke="${border}" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="${x + width / 2}" y="${y + height / 2 + 4.2}" text-anchor="middle" font-size="${size}" fill="${fg}" font-family="${SANS}">${esc(text)}</text>
+</g>`,
+  };
+}
+
+/** Linha de pílulas com quebra automática dentro de `maxWidth`. */
+export function pillRow(x, y, items, { gap = 9, lineGap = 10, maxWidth = 1100, ...options } = {}) {
+  const height = options.height ?? 26;
+  const size = options.size ?? 12.5;
+  const padding = options.padding ?? 13;
+  let cx = x;
+  let cy = y;
+  const parts = [];
+
+  for (const item of items) {
+    const width = Math.round(textWidth(item, size) + padding * 2);
+    if (cx > x && cx + width > x + maxWidth) {
+      cx = x;
+      cy += height + lineGap;
+    }
+    parts.push(pill(cx, cy, item, options).svg);
+    cx += width + gap;
+  }
+
+  return { svg: parts.join('\n'), height: cy - y + height };
+}
+
 /** Filete ornamental horizontal centrado em (cx, y). */
 export function rule(cx, y, width) {
   return `<rect x="${cx - width / 2}" y="${y}" width="${width}" height="1.2" fill="url(#rule)"/>`;

@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 586" width="1200" height="586" role="img" aria-labelledby="t d">
+<title id="t">Repertório: áreas de especialidade</title>
+<desc id="d">Seis fichas de especialidade, cada uma com as tecnologias e o nível declarado — Desenvolvimento Full Stack (React, Next.js, Angular, Vue); Arquitetura &amp; DevOps (Docker, Kubernetes, AWS, Terraform); IA &amp; Automação (Python, TensorFlow, PyTorch, OpenCV); Dados &amp; Persistência (PostgreSQL, MongoDB, Redis, Elasticsearch); Integração de Sistemas (GraphQL, FastAPI, Spring, Kafka); UX/UI &amp; Design Systems (Figma, Tailwind, Sass, Material UI).</desc>
+<defs>
+<linearGradient id="brassv" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#E8C999"/><stop offset=".55" stop-color="#D9A864"/><stop offset="1" stop-color="#A97F43"/>
+</linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#C27049" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#D9A864" stop-opacity=".75"/>
+  <stop offset="1" stop-color="#C27049" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#E8C999" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#E8C999" stop-opacity=".22"/>
+  <stop offset="1" stop-color="#E8C999" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="lamp" cx="50%" cy="34%" r="80%">
+  <stop offset="0" stop-color="#3C2A29"/><stop offset=".55" stop-color="#241A1B"/><stop offset="1" stop-color="#1B1214"/>
+</radialGradient>
+<radialGradient id="spark">
+  <stop offset="0" stop-color="#E8C999" stop-opacity=".95"/>
+  <stop offset=".45" stop-color="#D9A864" stop-opacity=".4"/>
+  <stop offset="1" stop-color="#D9A864" stop-opacity="0"/>
+</radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<pattern id="rug" width="54" height="54" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+  <rect width="54" height="54" fill="none"/>
+  <path d="M27 6 L48 27 L27 48 L6 27 Z" fill="none" stroke="#A8503F" stroke-opacity=".10" stroke-width="1"/>
+  <circle cx="27" cy="27" r="3" fill="#A8503F" fill-opacity=".08"/>
+</pattern></defs>
+<style>
+  text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+  .pulse { animation: pulse 5s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse { animation: none; }
+    .motion { display: none; }
+  }</style>
+
+<rect width="1200" height="586" rx="16" fill="url(#lamp)"/>
+<rect width="1200" height="586" rx="16" fill="url(#rug)"/>
+<rect x="4" y="4" width="1192" height="578" rx="13" fill="none" stroke="#D9A864" stroke-opacity=".38" stroke-width="1.4"/>
+<rect x="10" y="10" width="1180" height="566" rx="9" fill="none" stroke="#C27049" stroke-opacity=".18" stroke-width=".8"/>
+
+<g>
+  <rect x="36" y="36" width="368" height="248" rx="12" fill="#2E2122" stroke="#D9A864" stroke-opacity=".28" stroke-width="1.1"/>
+  <g transform="translate(68 78) scale(0.2200)" class="pulse">
+  <ellipse cx="-16" cy="0" rx="20" ry="15" fill="#C27049" transform="rotate(-20 -16 0)"/>
+  <rect x="0" y="-86" width="7" height="86" rx="3" fill="#C27049"/>
+  <path d="M7 -86 q30 12 30 38 q0 10 -7 18 q4 -22 -23 -33 z" fill="#C27049"/>
+</g>
+  <text x="84" y="76" font-size="18.5" fill="#EFE1CD">Desenvolvimento Full Stack</text>
+  <rect x="58" y="90" width="324" height="1" fill="url(#rule)"/>
+  <text x="58" y="114" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Interfaces modernas e APIs robustas,</text>
+  <text x="58" y="132" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">do frontend ao backend corporativo.</text>
+  <g>
+  <rect x="58" y="154" width="49" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="82.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">React</text>
+</g>
+<g>
+  <rect x="114" y="154" width="56" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="142" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Next.js</text>
+</g>
+<g>
+  <rect x="177" y="154" width="61" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="207.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Angular</text>
+</g>
+<g>
+  <rect x="245" y="154" width="39" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="264.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Vue</text>
+</g>
+  
+<text x="58" y="211" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">React</text>
+<text x="382" y="211" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">ESPECIALISTA</text>
+<rect x="58" y="218" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="58" y="218" width="324.0" height="4" rx="2" fill="#C27049"/>
+<circle cx="382.0" cy="220" r="5" fill="#D9A864"/>
+<circle cx="382.0" cy="220" r="2" fill="#1B1214" fill-opacity=".45"/>
+  
+<text x="58" y="249" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Node.js</text>
+<text x="382" y="249" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">ESPECIALISTA</text>
+<rect x="58" y="256" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="58" y="256" width="324.0" height="4" rx="2" fill="#C27049"/>
+<circle cx="382.0" cy="258" r="5" fill="#D9A864"/>
+<circle cx="382.0" cy="258" r="2" fill="#1B1214" fill-opacity=".45"/>
+</g>
+
+<g>
+  <rect x="422" y="36" width="368" height="248" rx="12" fill="#2E2122" stroke="#D9A864" stroke-opacity=".28" stroke-width="1.1"/>
+  <g transform="translate(454 78) scale(0.2200)" class="pulse">
+  <ellipse cx="-16" cy="0" rx="20" ry="15" fill="#C27049" transform="rotate(-20 -16 0)"/>
+  <rect x="0" y="-86" width="7" height="86" rx="3" fill="#C27049"/>
+  <path d="M7 -86 q30 12 30 38 q0 10 -7 18 q4 -22 -23 -33 z" fill="#C27049"/>
+</g>
+  <text x="470" y="76" font-size="18.5" fill="#EFE1CD">Arquitetura &amp; DevOps</text>
+  <rect x="444" y="90" width="324" height="1" fill="url(#rule)"/>
+  <text x="444" y="114" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Infraestrutura escalável, CI/CD</text>
+  <text x="444" y="132" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">e orquestração de microsserviços.</text>
+  <g>
+  <rect x="444" y="154" width="57" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="472.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Docker</text>
+</g>
+<g>
+  <rect x="508" y="154" width="79" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="547.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Kubernetes</text>
+</g>
+<g>
+  <rect x="594" y="154" width="42" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="615" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">AWS</text>
+</g>
+<g>
+  <rect x="643" y="154" width="79" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="682.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Terraform</text>
+</g>
+  
+<text x="444" y="211" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">AWS</text>
+<text x="768" y="211" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">AVANÇADO</text>
+<rect x="444" y="218" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="444" y="218" width="220.3" height="4" rx="2" fill="#C27049"/>
+<circle cx="664.3" cy="220" r="5" fill="#D9A864"/>
+<circle cx="664.3" cy="220" r="2" fill="#1B1214" fill-opacity=".45"/>
+  
+<text x="444" y="249" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Docker</text>
+<text x="768" y="249" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">ESPECIALISTA</text>
+<rect x="444" y="256" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="444" y="256" width="324.0" height="4" rx="2" fill="#C27049"/>
+<circle cx="768.0" cy="258" r="5" fill="#D9A864"/>
+<circle cx="768.0" cy="258" r="2" fill="#1B1214" fill-opacity=".45"/>
+</g>
+
+<g>
+  <rect x="808" y="36" width="368" height="248" rx="12" fill="#2E2122" stroke="#D9A864" stroke-opacity=".28" stroke-width="1.1"/>
+  <g transform="translate(840 78) scale(0.2200)" class="pulse">
+  <ellipse cx="-16" cy="0" rx="20" ry="15" fill="#C27049" transform="rotate(-20 -16 0)"/>
+  <rect x="0" y="-86" width="7" height="86" rx="3" fill="#C27049"/>
+  <path d="M7 -86 q30 12 30 38 q0 10 -7 18 q4 -22 -23 -33 z" fill="#C27049"/>
+</g>
+  <text x="856" y="76" font-size="18.5" fill="#EFE1CD">IA &amp; Automação</text>
+  <rect x="830" y="90" width="324" height="1" fill="url(#rule)"/>
+  <text x="830" y="114" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Machine learning, NLP e automação</text>
+  <text x="830" y="132" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">inteligente de processos empresariais.</text>
+  <g>
+  <rect x="830" y="154" width="55" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="857.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Python</text>
+</g>
+<g>
+  <rect x="892" y="154" width="84" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="934" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">TensorFlow</text>
+</g>
+<g>
+  <rect x="983" y="154" width="65" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="1015.5" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">PyTorch</text>
+</g>
+<g>
+  <rect x="1055" y="154" width="60" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="1085" y="169.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">OpenCV</text>
+</g>
+  
+<text x="830" y="211" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Python</text>
+<text x="1154" y="211" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">ESPECIALISTA</text>
+<rect x="830" y="218" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="830" y="218" width="324.0" height="4" rx="2" fill="#C27049"/>
+<circle cx="1154.0" cy="220" r="5" fill="#D9A864"/>
+<circle cx="1154.0" cy="220" r="2" fill="#1B1214" fill-opacity=".45"/>
+  
+<text x="830" y="249" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">TensorFlow</text>
+<text x="1154" y="249" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">AVANÇADO</text>
+<rect x="830" y="256" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="830" y="256" width="220.3" height="4" rx="2" fill="#C27049"/>
+<circle cx="1050.3" cy="258" r="5" fill="#D9A864"/>
+<circle cx="1050.3" cy="258" r="2" fill="#1B1214" fill-opacity=".45"/>
+</g>
+
+<g>
+  <rect x="36" y="302" width="368" height="248" rx="12" fill="#2E2122" stroke="#D9A864" stroke-opacity=".28" stroke-width="1.1"/>
+  <g transform="translate(68 344) scale(0.2200)" class="pulse">
+  <ellipse cx="-16" cy="0" rx="20" ry="15" fill="#C27049" transform="rotate(-20 -16 0)"/>
+  <rect x="0" y="-86" width="7" height="86" rx="3" fill="#C27049"/>
+  <path d="M7 -86 q30 12 30 38 q0 10 -7 18 q4 -22 -23 -33 z" fill="#C27049"/>
+</g>
+  <text x="84" y="342" font-size="18.5" fill="#EFE1CD">Dados &amp; Persistência</text>
+  <rect x="58" y="356" width="324" height="1" fill="url(#rule)"/>
+  <text x="58" y="380" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Modelagem, performance e integridade</text>
+  <text x="58" y="398" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">em bancos relacionais e NoSQL.</text>
+  <g>
+  <rect x="58" y="420" width="83" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="99.5" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">PostgreSQL</text>
+</g>
+<g>
+  <rect x="148" y="420" width="66" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="181" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">MongoDB</text>
+</g>
+<g>
+  <rect x="221" y="420" width="49" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="245.5" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Redis</text>
+</g>
+<g>
+  <rect x="277" y="420" width="92" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="323" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Elasticsearch</text>
+</g>
+  
+<text x="58" y="477" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">PostgreSQL</text>
+<text x="382" y="477" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">ESPECIALISTA</text>
+<rect x="58" y="484" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="58" y="484" width="324.0" height="4" rx="2" fill="#C27049"/>
+<circle cx="382.0" cy="486" r="5" fill="#D9A864"/>
+<circle cx="382.0" cy="486" r="2" fill="#1B1214" fill-opacity=".45"/>
+  
+<text x="58" y="515" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">MongoDB</text>
+<text x="382" y="515" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">AVANÇADO</text>
+<rect x="58" y="522" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="58" y="522" width="220.3" height="4" rx="2" fill="#C27049"/>
+<circle cx="278.3" cy="524" r="5" fill="#D9A864"/>
+<circle cx="278.3" cy="524" r="2" fill="#1B1214" fill-opacity=".45"/>
+</g>
+
+<g>
+  <rect x="422" y="302" width="368" height="248" rx="12" fill="#2E2122" stroke="#D9A864" stroke-opacity=".28" stroke-width="1.1"/>
+  <g transform="translate(454 344) scale(0.2200)" class="pulse">
+  <ellipse cx="-16" cy="0" rx="20" ry="15" fill="#C27049" transform="rotate(-20 -16 0)"/>
+  <rect x="0" y="-86" width="7" height="86" rx="3" fill="#C27049"/>
+  <path d="M7 -86 q30 12 30 38 q0 10 -7 18 q4 -22 -23 -33 z" fill="#C27049"/>
+</g>
+  <text x="470" y="342" font-size="18.5" fill="#EFE1CD">Integração de Sistemas</text>
+  <rect x="444" y="356" width="324" height="1" fill="url(#rule)"/>
+  <text x="444" y="380" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">REST, GraphQL, mensageria e</text>
+  <text x="444" y="398" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">integrações corporativas complexas.</text>
+  <g>
+  <rect x="444" y="420" width="66" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="477" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">GraphQL</text>
+</g>
+<g>
+  <rect x="517" y="420" width="61" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="547.5" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">FastAPI</text>
+</g>
+<g>
+  <rect x="585" y="420" width="55" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="612.5" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Spring</text>
+</g>
+<g>
+  <rect x="647" y="420" width="51" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="672.5" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Kafka</text>
+</g>
+  
+<text x="444" y="477" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">APIs REST</text>
+<text x="768" y="477" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">ESPECIALISTA</text>
+<rect x="444" y="484" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="444" y="484" width="324.0" height="4" rx="2" fill="#C27049"/>
+<circle cx="768.0" cy="486" r="5" fill="#D9A864"/>
+<circle cx="768.0" cy="486" r="2" fill="#1B1214" fill-opacity=".45"/>
+  
+<text x="444" y="515" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">GraphQL</text>
+<text x="768" y="515" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">AVANÇADO</text>
+<rect x="444" y="522" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="444" y="522" width="220.3" height="4" rx="2" fill="#C27049"/>
+<circle cx="664.3" cy="524" r="5" fill="#D9A864"/>
+<circle cx="664.3" cy="524" r="2" fill="#1B1214" fill-opacity=".45"/>
+</g>
+
+<g>
+  <rect x="808" y="302" width="368" height="248" rx="12" fill="#2E2122" stroke="#D9A864" stroke-opacity=".28" stroke-width="1.1"/>
+  <g transform="translate(840 344) scale(0.2200)" class="pulse">
+  <ellipse cx="-16" cy="0" rx="20" ry="15" fill="#C27049" transform="rotate(-20 -16 0)"/>
+  <rect x="0" y="-86" width="7" height="86" rx="3" fill="#C27049"/>
+  <path d="M7 -86 q30 12 30 38 q0 10 -7 18 q4 -22 -23 -33 z" fill="#C27049"/>
+</g>
+  <text x="856" y="342" font-size="18.5" fill="#EFE1CD">UX/UI &amp; Design Systems</text>
+  <rect x="830" y="356" width="324" height="1" fill="url(#rule)"/>
+  <text x="830" y="380" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Experiências digitais elegantes,</text>
+  <text x="830" y="398" font-size="12.5" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">acessíveis e orientadas ao usuário.</text>
+  <g>
+  <rect x="830" y="420" width="53" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="856.5" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Figma</text>
+</g>
+<g>
+  <rect x="890" y="420" width="66" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="923" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Tailwind</text>
+</g>
+<g>
+  <rect x="963" y="420" width="45" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="985.5" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Sass</text>
+</g>
+<g>
+  <rect x="1015" y="420" width="76" height="23" rx="11.5" fill="#241A1B" stroke="#C27049" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="1053" y="435.7" text-anchor="middle" font-size="11" fill="#B79E92" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Material UI</text>
+</g>
+  
+<text x="830" y="477" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Figma</text>
+<text x="1154" y="477" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">AVANÇADO</text>
+<rect x="830" y="484" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="830" y="484" width="220.3" height="4" rx="2" fill="#C27049"/>
+<circle cx="1050.3" cy="486" r="5" fill="#D9A864"/>
+<circle cx="1050.3" cy="486" r="2" fill="#1B1214" fill-opacity=".45"/>
+  
+<text x="830" y="515" font-size="11.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Tailwind</text>
+<text x="1154" y="515" text-anchor="end" font-size="10" fill="#B79E92" letter-spacing="1.4" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">ESPECIALISTA</text>
+<rect x="830" y="522" width="324" height="4" rx="2" fill="#3A2A2A"/>
+<rect x="830" y="522" width="324.0" height="4" rx="2" fill="#C27049"/>
+<circle cx="1154.0" cy="524" r="5" fill="#D9A864"/>
+<circle cx="1154.0" cy="524" r="2" fill="#1B1214" fill-opacity=".45"/>
+</g>
+</svg>
