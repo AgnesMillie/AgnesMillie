@@ -9,11 +9,11 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Estat&#237;sticas do GitHub de Agnes Millie, Rank: C+</title>
-        <desc id="descId">Total de estrelas: 0, Total de Commits  (Ano passado) : 75, Total de PRs: 47, Total de Issues: 14, Contribuiu para (ano passado): 0</desc>
+        <desc id="descId">Total de estrelas: 0, Total de Commits  (Ano passado) : 71, Total de PRs: 48, Total de Issues: 14, Contribuiu para (ano passado): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #D4AF37;
+            fill: #D9A864;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           @supports(-moz-appearance: auto) {
@@ -22,7 +22,7 @@
           }
           
     .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #F1E6CC;
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #EFE1CD;
     }
     @supports(-moz-appearance: auto) {
       /* Selector detects Firefox */
@@ -33,7 +33,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #F1E6CC;
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #EFE1CD;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -46,18 +46,18 @@
     .not_bold { font-weight: 400 }
     .bold { font-weight: 700 }
     .icon {
-      fill: #C0344D;
+      fill: #C27049;
       display: block;
     }
 
     .rank-circle-rim {
-      stroke: #C0344D;
+      stroke: #C27049;
       fill: none;
       stroke-width: 6;
       opacity: 0.2;
     }
     .rank-circle {
-      stroke: #C0344D;
+      stroke: #C27049;
       stroke-dasharray: 250;
       fill: none;
       stroke-width: 6;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 206.64361001553715;
+        stroke-dashoffset: 206.5721640727837;
       }
     }
   
@@ -114,11 +114,11 @@
           class="card-bg"
           x="0.5"
           y="0.5"
-          rx="10"
+          rx="12"
           height="99%"
-          stroke="#8C6A12"
+          stroke="#7E3B3B"
           width="466"
-          fill="#1A1726"
+          fill="#241A1B"
           stroke-opacity="1"
         />
 
@@ -184,7 +184,7 @@
         x="274.01"
         y="12.5"
         data-testid="commits"
-      >75</text>
+      >71</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -199,7 +199,7 @@
         x="274.01"
         y="12.5"
         data-testid="prs"
-      >47</text>
+      >48</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
