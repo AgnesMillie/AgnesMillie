@@ -57,7 +57,7 @@ ${cup(452, 330, 58)}
   <text class="line" x="2" y="289">bem construído e engenharia com propósito.</text>
   ${note(600, 150, 46, C.terracotta, 'class="pulse"')}
   ${waveform(2, 338, 560, 46, 46, 5, C.terracotta, '.55')}
-  <text class="meta" x="2" y="382">LADO A · LADO B — 33⅓ RPM — GRAVADO EM SÃO PAULO</text>
+  <text class="meta" x="2" y="382">LADO A · LADO B — 33⅓ RPM — GRAVADO NO BRASIL</text>
 </g>
 </svg>
 `;
