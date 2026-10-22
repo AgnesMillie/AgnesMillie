@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 46" width="1200" height="46" role="img" aria-labelledby="t d">
+<title id="t">Divisor</title>
+<desc id="d">Sulcos de um disco com a agulha correndo sobre eles.</desc>
+<defs>
+<linearGradient id="brassv" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#E8C999"/><stop offset=".55" stop-color="#D9A864"/><stop offset="1" stop-color="#A97F43"/>
+</linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#C27049" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#D9A864" stop-opacity=".75"/>
+  <stop offset="1" stop-color="#C27049" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#E8C999" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#E8C999" stop-opacity=".22"/>
+  <stop offset="1" stop-color="#E8C999" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="lamp" cx="50%" cy="34%" r="80%">
+  <stop offset="0" stop-color="#3C2A29"/><stop offset=".55" stop-color="#241A1B"/><stop offset="1" stop-color="#1B1214"/>
+</radialGradient>
+<radialGradient id="spark">
+  <stop offset="0" stop-color="#E8C999" stop-opacity=".95"/>
+  <stop offset=".45" stop-color="#D9A864" stop-opacity=".4"/>
+  <stop offset="1" stop-color="#D9A864" stop-opacity="0"/>
+</radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<style>
+  text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+  .pulse { animation: pulse 5s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse { animation: none; }
+    .motion { display: none; }
+  }
+  .needle { animation: slide 16s ease-in-out infinite; }
+  @keyframes slide { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(840px); } }</style>
+<line x1="120" y1="15" x2="1080" y2="15" stroke="#C27049" stroke-opacity="0.300" stroke-width="1"/>
+<line x1="120" y1="20" x2="1080" y2="20" stroke="#C27049" stroke-opacity="0.245" stroke-width="1"/>
+<line x1="120" y1="25" x2="1080" y2="25" stroke="#C27049" stroke-opacity="0.190" stroke-width="1"/>
+<line x1="120" y1="30" x2="1080" y2="30" stroke="#C27049" stroke-opacity="0.135" stroke-width="1"/>
+<g transform="translate(170 0)">
+  <g class="needle">
+    <circle cx="0" cy="20" r="9" fill="url(#spark)"/>
+    <rect x="-1" y="6" width="2" height="28" rx="1" fill="#D9A864" fill-opacity=".75"/>
+  </g>
+</g>
+<g transform="translate(600 36) scale(0.2600)" opacity=".75">
+  <ellipse cx="-16" cy="0" rx="20" ry="15" fill="#D9A864" transform="rotate(-20 -16 0)"/>
+  <rect x="0" y="-86" width="7" height="86" rx="3" fill="#D9A864"/>
+  <path d="M7 -86 q30 12 30 38 q0 10 -7 18 q4 -22 -23 -33 z" fill="#D9A864"/>
+</g>
+</svg>

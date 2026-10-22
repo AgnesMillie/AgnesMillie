@@ -1,112 +1,111 @@
 #!/usr/bin/env node
-// Gera profile/trophies.svg — as conquistas do perfil como cartas de baralho,
-// desenhadas aqui mesmo a partir da API do GitHub (sem serviço de terceiros).
+// Gera profile/trophies.svg — as conquistas do perfil como as faixas bônus do
+// disco, cada uma com seu selo, a partir da API do GitHub (sem terceiros).
 //
 //   node .github/scripts/gen-trophies.mjs <login> [saída]
 //   node .github/scripts/gen-trophies.mjs <login> [saída] --placeholder
 //   node .github/scripts/gen-trophies.mjs <login> [saída] --fixture <json>
 //
 // Métrica que a API não devolver aparece como "—": nenhum número é inventado.
-// --fixture renderiza a partir de um JSON de métricas, sem tocar na rede.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { parseArgs } from './lib/args.mjs';
 import { allPublicRepos, rest, searchCount } from './lib/github.mjs';
-import { C, esc, open, rule, shortNum, suit } from './lib/theme.mjs';
+import { C, esc, frame, open, rule, SANS, shortNum } from './lib/theme.mjs';
+import { rugPattern, vinyl, vinylDefs, waveform } from './lib/motifs.mjs';
 
 const W = 1200;
 const COLS = 4;
-const MARGIN = 30;
-const GAP = 14;
+const MARGIN = 34;
+const GAP = 16;
 const CARD_W = Math.round((W - MARGIN * 2 - GAP * (COLS - 1)) / COLS);
-const CARD_H = 158;
-const GRID_TOP = 104;
+const CARD_H = 150;
+const GRID_TOP = 112;
 
-const SUITS = ['spade', 'heart', 'diamond', 'club'];
-const RANKS = ['Ás', 'Rei', 'Dama', 'Valete', 'Dez'];
+/** Selos de disco, do mais alto para o mais baixo. */
+const SEALS = ['Ouro', 'Prata', 'Bronze', 'Cobre', 'Demo'];
+const SEAL_COLOR = { Ouro: C.brass, Prata: '#BFC3C0', Bronze: C.clay, Cobre: C.terracotta, Demo: C.muted };
 
-/** Posição do valor nas faixas (da mais alta para a mais baixa). */
-function rankOf(value, thresholds) {
+function sealOf(value, thresholds) {
   if (value === null || value === undefined) return null;
   const index = thresholds.findIndex((limit) => value >= limit);
-  return RANKS[index === -1 ? RANKS.length - 1 : index];
+  return SEALS[index === -1 ? SEALS.length - 1 : index];
 }
 
-function card(trophy, index) {
+function card(item, index) {
   const col = index % COLS;
   const row = Math.floor(index / COLS);
   const x = MARGIN + col * (CARD_W + GAP);
   const y = GRID_TOP + row * (CARD_H + GAP);
-  const suitName = SUITS[index % SUITS.length];
-  const suitColor = suitName === 'heart' || suitName === 'diamond' ? C.redDeep : C.gold;
-  const missing = trophy.value === null || trophy.value === undefined;
-  const delay = (0.22 * index).toFixed(2);
+  const missing = item.value === null || item.value === undefined;
+  const delay = (0.24 * index).toFixed(2);
   const clip = `clip-${index}`;
-  const ace = trophy.rank === RANKS[0];
+  const seal = item.seal ?? '—';
+  const sealColor = SEAL_COLOR[seal] ?? C.muted;
 
   return `
-<g${missing ? ' opacity=".55"' : ''}>
-  <clipPath id="${clip}"><rect x="${x}" y="${y}" width="${CARD_W}" height="${CARD_H}" rx="10"/></clipPath>
-  <rect x="${x}" y="${y}" width="${CARD_W}" height="${CARD_H}" rx="10" fill="${C.panel}" stroke="${C.goldDark}" stroke-width="1.2"/>
-  <rect x="${x + 5}" y="${y + 5}" width="${CARD_W - 10}" height="${CARD_H - 10}" rx="7" fill="none" stroke="${C.gold}" stroke-width=".6" stroke-opacity=".35"${ace ? ` class="ace" style="animation-delay:${delay}s"` : ''}/>
+<g${missing ? ' opacity=".5"' : ''}>
+  <clipPath id="${clip}"><rect x="${x}" y="${y}" width="${CARD_W}" height="${CARD_H}" rx="12"/></clipPath>
+  <rect x="${x}" y="${y}" width="${CARD_W}" height="${CARD_H}" rx="12" fill="${C.panel}" stroke="${C.brass}" stroke-opacity=".3" stroke-width="1.1"/>
   <g clip-path="url(#${clip})">
-    <!-- brilho que varre a carta: 2,7 s de passagem e ~6 s de pausa a cada ciclo -->
+    <!-- brilho que varre a ficha: ~2,7 s de passagem e ~6 s de pausa -->
     <rect class="motion" x="${x - CARD_W}" y="${y}" width="${CARD_W * 0.7}" height="${CARD_H}" fill="url(#sheen)">
       <animateTransform attributeName="transform" type="translate"
         values="0 0;${(CARD_W * 2.2).toFixed(0)} 0;${(CARD_W * 2.2).toFixed(0)} 0"
         keyTimes="0;0.3;1" calcMode="spline" keySplines=".4 0 .2 1;0 0 1 1"
         dur="9s" begin="${delay}s" repeatCount="indefinite"/>
     </rect>
+    ${waveform(x + 14, y + CARD_H - 20, CARD_W - 28, 20, 26, item.seed, C.terracotta, '.22')}
   </g>
-  ${suit(suitName, x + 18, y + 28, 15, suitColor, 'class="pip" style="animation-delay:' + delay + 's"')}
-  ${suit(suitName, x + CARD_W - 18, y + CARD_H - 14, 15, suitColor, 'opacity=".5"')}
-  <text x="${x + CARD_W - 16}" y="${y + 26}" text-anchor="end" font-size="11" fill="${C.purpleSoft}" letter-spacing="1.8">${esc((trophy.rank || '—').toUpperCase())}</text>
-  <text x="${x + CARD_W / 2}" y="${y + 86}" text-anchor="middle" font-size="40" fill="url(#goldv)" letter-spacing="1">${esc(trophy.display)}</text>
-  <text x="${x + CARD_W / 2}" y="${y + 112}" text-anchor="middle" font-size="14" fill="${C.cream}" letter-spacing=".6">${esc(trophy.label)}</text>
-  <text x="${x + CARD_W / 2}" y="${y + 133}" text-anchor="middle" font-size="10.5" fill="${C.purpleSoft}" letter-spacing=".4"><tspan font-style="italic">${esc(trophy.flavor)}</tspan></text>
+
+  ${vinyl(x + 40, y + 44, 21, { spin: missing ? 0 : 13 + index, label: sealColor, grooves: 4, id: `t${index}` })}
+  <text x="${x + CARD_W - 16}" y="${y + 30}" text-anchor="end" font-size="10.5" fill="${sealColor}" letter-spacing="2.4" font-family="${SANS}">${esc(seal.toUpperCase())}</text>
+
+  <text x="${x + 72}" y="${y + 56}" font-size="36" fill="url(#brassv)" letter-spacing=".5">${esc(item.display)}</text>
+  <text x="${x + 20}" y="${y + 94}" font-size="15" fill="${C.cream}" letter-spacing=".4">${esc(item.label)}</text>
+  <text x="${x + 20}" y="${y + 114}" font-size="11" fill="${C.muted}" font-style="italic">${esc(item.flavor)}</text>
 </g>`;
 }
 
-const STYLE = `
-  .ace { animation: ace 3.6s ease-in-out infinite; }
-  @keyframes ace { 0%, 100% { stroke-opacity: .3; } 50% { stroke-opacity: 1; } }`;
+const STYLE = '';
 
-function render(trophies, footer) {
-  const rows = Math.ceil(trophies.length / COLS);
-  const H = GRID_TOP + rows * CARD_H + (rows - 1) * GAP + 54;
-  const described = trophies.map((t) => `${t.label}: ${t.display}`).join('; ');
+function render(items, footer) {
+  const rows = Math.ceil(items.length / COLS);
+  const H = GRID_TOP + rows * CARD_H + (rows - 1) * GAP + 56;
+  const described = items.map((t) => `${t.label}: ${t.display}`).join('; ');
 
   return `${open(
     W,
     H,
-    'Conquistas de Agnes Millie no GitHub',
-    `Oito cartas de baralho com as conquistas do perfil — ${described}.`,
+    'Faixas bônus: conquistas no GitHub',
+    `Oito fichas de faixa com as conquistas do perfil — ${described}.`,
     STYLE,
+    `${rugPattern()}${items.map((_, i) => vinylDefs(`t${i}`)).join('')}`,
   )}
-<text x="${W / 2}" y="52" text-anchor="middle" font-size="25" fill="url(#goldv)" letter-spacing="2.2">O Baralho das Conquistas</text>
-${rule(W / 2, 62, 360)}
-<text x="${W / 2}" y="82" text-anchor="middle" font-size="12" fill="${C.purpleSoft}" letter-spacing="2.4">TODOS GANHARAM E TODOS DEVEM TER PRÊMIOS</text>
-${suit('diamond', W / 2 - 196, 60, 11, C.redDeep, 'class="pip"')}
-${suit('club', W / 2 + 196, 60, 11, C.gold, 'class="pip" style="animation-delay:.8s"')}
+${frame(W, H)}
 
-${trophies.map(card).join('\n')}
+<text x="${W / 2}" y="58" text-anchor="middle" font-size="26" fill="url(#brassv)" letter-spacing="3">Faixas bônus</text>
+${rule(W / 2, 68, 300)}
+<text x="${W / 2}" y="90" text-anchor="middle" font-size="11.5" fill="${C.muted}" letter-spacing="3" font-family="${SANS}">O QUE FICOU GRAVADO ATÉ AQUI</text>
 
-<text x="${W / 2}" y="${H - 20}" text-anchor="middle" font-size="10.5" fill="${C.purpleSoft}" letter-spacing="1.2">${esc(footer)}</text>
+${items.map(card).join('\n')}
+
+<text x="${W / 2}" y="${H - 22}" text-anchor="middle" font-size="10.5" fill="${C.muted}" letter-spacing="1.2" font-family="${SANS}">${esc(footer)}</text>
 </svg>
 `;
 }
 
 function build(metrics) {
   const spec = [
-    { key: 'commits', label: 'Commits', flavor: 'cada carta na mesa', thresholds: [1000, 500, 200, 50, 0] },
-    { key: 'stars', label: 'Estrelas', flavor: 'o jardim de rosas', thresholds: [500, 100, 25, 5, 0] },
-    { key: 'pullRequests', label: 'Pull Requests', flavor: 'convites ao chá', thresholds: [200, 50, 20, 5, 0] },
-    { key: 'issues', label: 'Issues', flavor: 'enigmas do Gato', thresholds: [100, 30, 10, 3, 0] },
-    { key: 'followers', label: 'Seguidores', flavor: 'a corte reunida', thresholds: [200, 50, 20, 5, 0] },
-    { key: 'repositories', label: 'Repositórios', flavor: 'portas do corredor', thresholds: [50, 25, 10, 3, 0] },
-    { key: 'forks', label: 'Forks', flavor: 'espelhos do outro lado', thresholds: [100, 25, 10, 2, 0] },
-    { key: 'years', label: 'Jornada', flavor: 'desde a toca do coelho', thresholds: [8, 5, 3, 1, 0], suffix: ' anos' },
+    { key: 'commits', label: 'Commits', flavor: 'cada tomada registrada', thresholds: [1000, 500, 200, 50, 0], seed: 11 },
+    { key: 'pullRequests', label: 'Pull Requests', flavor: 'o disco entregue à prensa', thresholds: [200, 50, 20, 5, 0], seed: 19 },
+    { key: 'issues', label: 'Issues', flavor: 'ruídos encontrados na fita', thresholds: [100, 30, 10, 3, 0], seed: 29 },
+    { key: 'repositories', label: 'Repositórios', flavor: 'o catálogo completo', thresholds: [50, 25, 10, 3, 0], seed: 41 },
+    { key: 'stars', label: 'Estrelas', flavor: 'quem levou o disco para casa', thresholds: [500, 100, 25, 5, 0], seed: 53 },
+    { key: 'forks', label: 'Forks', flavor: 'regravado por outra banda', thresholds: [100, 25, 10, 2, 0], seed: 67 },
+    { key: 'followers', label: 'Seguidores', flavor: 'a plateia da noite', thresholds: [200, 50, 20, 5, 0], seed: 79 },
+    { key: 'years', label: 'Em estúdio', flavor: 'desde a primeira gravação', thresholds: [8, 5, 3, 1, 0], suffix: ' anos', seed: 91 },
   ];
 
   return spec.map((item) => {
@@ -115,9 +114,10 @@ function build(metrics) {
     return {
       label: item.label,
       flavor: item.flavor,
+      seed: item.seed,
       value,
       display,
-      rank: rankOf(value, item.thresholds),
+      seal: sealOf(value, item.thresholds),
     };
   });
 }
