@@ -25,36 +25,18 @@
 <br/>
 
 <div align="center">
-<table width="86%">
+<table width="98%">
   <tr>
-    <td width="50%" valign="top" align="center">
-      <br/>
-      <b>L&nbsp;A&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp;A</b>
-      <br/><br/>
-      <a href="#a1"><b>A1</b>&nbsp;&nbsp;Quem está tocando</a><br/>
-      <sub>Sobre mim</sub>
-      <br/><br/>
-      <a href="#a2"><b>A2</b>&nbsp;&nbsp;O repertório</a><br/>
-      <sub>Especialidades</sub>
-      <br/><br/>
-      <a href="#a3"><b>A3</b>&nbsp;&nbsp;Os instrumentos</a><br/>
-      <sub>Stack tecnológico</sub>
-      <br/><br/>
-    </td>
-    <td width="50%" valign="top" align="center">
-      <br/>
-      <b>L&nbsp;A&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp;B</b>
-      <br/><br/>
-      <a href="#b1"><b>B1</b>&nbsp;&nbsp;As gravações</a><br/>
-      <sub>Projetos em destaque</sub>
-      <br/><br/>
-      <a href="#b2"><b>B2</b>&nbsp;&nbsp;Rotação</a><br/>
-      <sub>Métricas e contribuições</sub>
-      <br/><br/>
-      <a href="#b3"><b>B3</b>&nbsp;&nbsp;Faixas bônus</a><br/>
-      <sub>Conquistas</sub>
-      <br/><br/>
-    </td>
+    <td width="50%"><a href="#a1"><img src="./assets/item-a1.svg" width="100%" alt="A1 — Quem está tocando (sobre mim)"/></a></td>
+    <td width="50%"><a href="#b1"><img src="./assets/item-b1.svg" width="100%" alt="B1 — As gravações (projetos em destaque)"/></a></td>
+  </tr>
+  <tr>
+    <td><a href="#a2"><img src="./assets/item-a2.svg" width="100%" alt="A2 — O repertório (especialidades)"/></a></td>
+    <td><a href="#b2"><img src="./assets/item-b2.svg" width="100%" alt="B2 — Rotação (métricas e contribuições)"/></a></td>
+  </tr>
+  <tr>
+    <td><a href="#a3"><img src="./assets/item-a3.svg" width="100%" alt="A3 — Os instrumentos (stack tecnológico)"/></a></td>
+    <td><a href="#b3"><img src="./assets/item-b3.svg" width="100%" alt="B3 — Faixas bônus (conquistas)"/></a></td>
   </tr>
 </table>
 </div>
@@ -87,14 +69,10 @@
       </blockquote>
       <br/>
       <p>
-        <img src="https://img.shields.io/badge/Onde-Brasil-6E8674?style=flat-square&labelColor=241A1B" alt="Onde: Brasil"/>
-        &nbsp;
-        <img src="https://img.shields.io/badge/Aberta_a-Novos_projetos-D9A864?style=flat-square&labelColor=241A1B" alt="Aberta a novos projetos"/>
-        &nbsp;
-        <img src="https://img.shields.io/badge/Idiomas-PT_%C2%B7_EN_%C2%B7_ES-C98F86?style=flat-square&labelColor=241A1B" alt="Idiomas: PT, EN, ES"/>
+        <img src="./assets/tags.svg" alt="Brasil · Aberta a novos projetos · PT, EN e ES"/>
       </p>
       <p>
-        <a href="https://agnesmillie.github.io/agnesmillie-portfolio/"><img src="https://img.shields.io/badge/Portf%C3%B3lio-Ouvir_o_disco_inteiro-C27049?style=for-the-badge&labelColor=241A1B" alt="Visitar portfólio"/></a>
+        <a href="https://agnesmillie.github.io/agnesmillie-portfolio/"><img src="./assets/btn-portfolio.svg" alt="Ouvir o disco inteiro: visitar o portfólio"/></a>
       </p>
       <br/>
     </td>
@@ -118,84 +96,7 @@
 <img src="./assets/track-a2.svg" width="100%" alt="Faixa A2: O repertório. Especialidades."/>
 
 <div align="center">
-<table width="94%">
-  <tr>
-    <td align="center" width="33%" valign="top">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=react,nextjs,angular,vue&theme=dark" height="40" alt="React, Next.js, Angular, Vue"/>
-      <br/><br/>
-      <strong>♪&nbsp; Desenvolvimento Full Stack</strong>
-      <br/>
-      <sub>Interfaces modernas e APIs robustas,<br/>do frontend ao backend corporativo.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/React-Especialista-C27049?style=flat-square&labelColor=241A1B" alt="React: especialista"/>
-      <img src="https://img.shields.io/badge/Node.js-Especialista-C27049?style=flat-square&labelColor=241A1B" alt="Node.js: especialista"/>
-      <br/>
-    </td>
-    <td align="center" width="33%" valign="top">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,terraform&theme=dark" height="40" alt="Docker, Kubernetes, AWS, Terraform"/>
-      <br/><br/>
-      <strong>♪&nbsp; Arquitetura &amp; DevOps</strong>
-      <br/>
-      <sub>Infraestrutura escalável, CI/CD<br/>e orquestração de microsserviços.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/AWS-Avan%C3%A7ado-D9A864?style=flat-square&labelColor=241A1B" alt="AWS: avançado"/>
-      <img src="https://img.shields.io/badge/Docker-Especialista-D9A864?style=flat-square&labelColor=241A1B" alt="Docker: especialista"/>
-      <br/>
-    </td>
-    <td align="center" width="33%" valign="top">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,opencv&theme=dark" height="40" alt="Python, TensorFlow, PyTorch, OpenCV"/>
-      <br/><br/>
-      <strong>♪&nbsp; IA &amp; Automação</strong>
-      <br/>
-      <sub>Machine learning, NLP e automação<br/>inteligente de processos empresariais.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/Python-Especialista-C98F86?style=flat-square&labelColor=241A1B" alt="Python: especialista"/>
-      <img src="https://img.shields.io/badge/TensorFlow-Avan%C3%A7ado-C98F86?style=flat-square&labelColor=241A1B" alt="TensorFlow: avançado"/>
-      <br/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="33%" valign="top">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,elasticsearch&theme=dark" height="40" alt="PostgreSQL, MongoDB, Redis, Elasticsearch"/>
-      <br/><br/>
-      <strong>♪&nbsp; Dados &amp; Persistência</strong>
-      <br/>
-      <sub>Modelagem, performance e integridade<br/>em bancos relacionais e NoSQL.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/PostgreSQL-Especialista-6E8674?style=flat-square&labelColor=241A1B" alt="PostgreSQL: especialista"/>
-      <img src="https://img.shields.io/badge/MongoDB-Avan%C3%A7ado-6E8674?style=flat-square&labelColor=241A1B" alt="MongoDB: avançado"/>
-      <br/>
-    </td>
-    <td align="center" width="33%" valign="top">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=graphql,fastapi,spring,kafka&theme=dark" height="40" alt="GraphQL, FastAPI, Spring, Kafka"/>
-      <br/><br/>
-      <strong>♪&nbsp; Integração de Sistemas</strong>
-      <br/>
-      <sub>REST, GraphQL, mensageria e<br/>integrações corporativas complexas.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/APIs_REST-Especialista-C27049?style=flat-square&labelColor=241A1B" alt="APIs REST: especialista"/>
-      <img src="https://img.shields.io/badge/GraphQL-Avan%C3%A7ado-C27049?style=flat-square&labelColor=241A1B" alt="GraphQL: avançado"/>
-      <br/>
-    </td>
-    <td align="center" width="33%" valign="top">
-      <br/>
-      <img src="https://skillicons.dev/icons?i=figma,tailwind,sass,materialui&theme=dark" height="40" alt="Figma, Tailwind, Sass, Material UI"/>
-      <br/><br/>
-      <strong>♪&nbsp; UX/UI &amp; Design Systems</strong>
-      <br/>
-      <sub>Experiências digitais elegantes,<br/>acessíveis e orientadas ao usuário.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/Figma-Avan%C3%A7ado-D9A864?style=flat-square&labelColor=241A1B" alt="Figma: avançado"/>
-      <img src="https://img.shields.io/badge/Tailwind-Especialista-D9A864?style=flat-square&labelColor=241A1B" alt="Tailwind: especialista"/>
-      <br/>
-    </td>
-  </tr>
-</table>
+  <img src="./assets/skills.svg" width="98%" alt="Seis áreas de especialidade, cada uma com as tecnologias e o nível declarado"/>
 </div>
 
 <img src="./assets/groove.svg" width="100%" alt=""/>
@@ -208,39 +109,7 @@
 <img src="./assets/track-a3.svg" width="100%" alt="Faixa A3: Os instrumentos. Stack tecnológico."/>
 
 <div align="center">
-
-**Linguagens**
-
-<img src="https://skillicons.dev/icons?i=python,java,typescript,javascript,go,csharp,php,kotlin&perline=8&theme=dark" height="48" alt="Python, Java, TypeScript, JavaScript, Go, C#, PHP, Kotlin"/>
-
-<br/><br/>
-
-**Frameworks e bibliotecas**
-
-<img src="https://skillicons.dev/icons?i=react,nextjs,angular,vue,nodejs,fastapi,spring,flutter&perline=8&theme=dark" height="48" alt="React, Next.js, Angular, Vue, Node.js, FastAPI, Spring, Flutter"/>
-
-<br/>
-
-<img src="https://skillicons.dev/icons?i=laravel,express,nestjs,django,graphql,redux,prisma,jest&perline=8&theme=dark" height="48" alt="Laravel, Express, NestJS, Django, GraphQL, Redux, Prisma, Jest"/>
-
-<br/><br/>
-
-**Dados e storage**
-
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,sqlite,elasticsearch,supabase,firebase&perline=8&theme=dark" height="48" alt="PostgreSQL, MongoDB, MySQL, Redis, SQLite, Elasticsearch, Supabase, Firebase"/>
-
-<br/><br/>
-
-**Nuvem e infraestrutura**
-
-<img src="https://skillicons.dev/icons?i=aws,azure,gcp,docker,kubernetes,terraform,nginx,linux&perline=8&theme=dark" height="48" alt="AWS, Azure, GCP, Docker, Kubernetes, Terraform, Nginx, Linux"/>
-
-<br/><br/>
-
-**Ferramentas**
-
-<img src="https://skillicons.dev/icons?i=git,github,gitlab,jira,figma,vscode,postman,grafana&perline=8&theme=dark" height="48" alt="Git, GitHub, GitLab, Jira, Figma, VS Code, Postman, Grafana"/>
-
+  <img src="./assets/stack.svg" width="98%" alt="Ficha técnica do stack: linguagens, frameworks, dados, nuvem e ferramentas"/>
 </div>
 
 <img src="./assets/groove.svg" width="100%" alt=""/>
@@ -274,7 +143,7 @@
 
 <br/>
 
-<a href="https://github.com/AgnesMillie?tab=repositories"><img src="https://img.shields.io/badge/Cat%C3%A1logo_completo-Todos_os_reposit%C3%B3rios-7E3B3B?style=for-the-badge&labelColor=241A1B" alt="Ver todos os repositórios"/></a>
+<a href="https://github.com/AgnesMillie?tab=repositories"><img src="./assets/btn-repos.svg" alt="Catálogo completo: todos os repositórios"/></a>
 
 </div>
 

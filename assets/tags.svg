@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 354 44" width="354" height="44" role="img" aria-labelledby="t d">
+<title id="t">Brasil · Aberta a novos projetos · PT, EN e ES</title>
+<desc id="d">Selos com localização, disponibilidade e idiomas.</desc>
+<defs>
+<linearGradient id="brassv" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#E8C999"/><stop offset=".55" stop-color="#D9A864"/><stop offset="1" stop-color="#A97F43"/>
+</linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#C27049" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#D9A864" stop-opacity=".75"/>
+  <stop offset="1" stop-color="#C27049" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#E8C999" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#E8C999" stop-opacity=".22"/>
+  <stop offset="1" stop-color="#E8C999" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="lamp" cx="50%" cy="34%" r="80%">
+  <stop offset="0" stop-color="#3C2A29"/><stop offset=".55" stop-color="#241A1B"/><stop offset="1" stop-color="#1B1214"/>
+</radialGradient>
+<radialGradient id="spark">
+  <stop offset="0" stop-color="#E8C999" stop-opacity=".95"/>
+  <stop offset=".45" stop-color="#D9A864" stop-opacity=".4"/>
+  <stop offset="1" stop-color="#D9A864" stop-opacity="0"/>
+</radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<style>
+  text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+  .pulse { animation: pulse 5s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse { animation: none; }
+    .motion { display: none; }
+  }</style>
+<g>
+  <rect x="0" y="9" width="63" height="26" rx="13" fill="#2E2122" stroke="#D9A864" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="31.5" y="26.2" text-anchor="middle" font-size="12.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Brasil</text>
+</g>
+<g>
+  <rect x="73" y="9" width="166" height="26" rx="13" fill="#2E2122" stroke="#D9A864" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="156" y="26.2" text-anchor="middle" font-size="12.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Aberta a novos projetos</text>
+</g>
+<g>
+  <rect x="249" y="9" width="106" height="26" rx="13" fill="#2E2122" stroke="#D9A864" stroke-opacity=".35" stroke-width=".9"/>
+  <text x="302" y="26.2" text-anchor="middle" font-size="12.5" fill="#EFE1CD" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">PT · EN · ES</text>
+</g>
+</svg>
