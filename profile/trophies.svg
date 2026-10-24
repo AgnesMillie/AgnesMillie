@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 584" width="1200" height="584" role="img" aria-labelledby="t d">
 <title id="t">Faixas bônus: conquistas no GitHub</title>
-<desc id="d">Oito fichas de faixa com as conquistas do perfil — Commits: 243; Pull Requests: 52; Issues: 14; Repositórios: 9; Estrelas: 0; Forks: 2; Seguidores: 0; Em estúdio: 3,7 anos.</desc>
+<desc id="d">Oito fichas de faixa com as conquistas do perfil — Commits: 243; Pull Requests: 52; Issues: 14; Repositórios: 9; Estrelas: 0; Forks: 2; Seguidores: 0; Em estúdio: 3,8 anos.</desc>
 <defs>
 <linearGradient id="brassv" x1="0" y1="0" x2="0" y2="1">
   <stop offset="0" stop-color="#E8C999"/><stop offset=".55" stop-color="#D9A864"/><stop offset="1" stop-color="#A97F43"/>
@@ -390,10 +390,10 @@
 </g>
   <text x="1148" y="367" text-anchor="end" font-size="16" fill="#A8503F" letter-spacing="1.8" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">BRONZE</text>
 
-  <text x="915" y="428" font-size="44" fill="url(#brassv)" letter-spacing=".5">3,7 anos</text>
+  <text x="915" y="428" font-size="44" fill="url(#brassv)" letter-spacing=".5">3,8 anos</text>
   <text x="915" y="462" font-size="21" fill="#EFE1CD" letter-spacing=".3">Em estúdio</text>
   <text x="915" y="488" font-size="17" fill="#B79E92" font-style="italic">desde a 1ª gravação</text>
 </g>
 
-<text x="600" y="562" text-anchor="middle" font-size="16" fill="#B79E92" letter-spacing="1.2" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Dados do GitHub em 23 de outubro de 2026 · commits, PRs e issues pela API de busca</text>
+<text x="600" y="562" text-anchor="middle" font-size="16" fill="#B79E92" letter-spacing="1.2" font-family="'Avenir Next', 'Segoe UI', Inter, system-ui, -apple-system, sans-serif">Dados do GitHub em 24 de outubro de 2026 · commits, PRs e issues pela API de busca</text>
 </svg>
